@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Indie Recs · Find your next film</title>
+<style>
+:root{--paper:#f4f1ea;--ink:#252a24;--muted:#656a60;--line:#d7d9ce;--green:#3b523e;--accent:#e2ecda}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,sans-serif;font-size:15px}header{border-bottom:1px solid var(--line);padding:22px 5%;display:flex;justify-content:space-between;align-items:center}.brand{font-weight:750;letter-spacing:-1px;font-size:24px}.brand span{font-weight:400;font-style:italic;font-family:Georgia,serif}.live{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--green)}.live:before{content:'';display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--green);margin-right:8px}main{max-width:1250px;margin:auto;padding:48px 5%}.eyebrow{text-transform:uppercase;font-size:11px;letter-spacing:2px;color:var(--green);font-weight:650}h1{font-family:Georgia,serif;font-size:clamp(36px,6vw,66px);font-weight:400;line-height:1.06;letter-spacing:-2px;margin:15px 0 18px;max-width:720px}h1 em{color:var(--green)}.intro{color:var(--muted);line-height:1.7;max-width:590px}.stats{display:flex;gap:34px;border-block:1px solid var(--line);padding:20px 0;margin:32px 0}.stat strong{font-size:25px;font-weight:550;display:block}.stat span{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--muted)}.workspace{display:grid;grid-template-columns:260px 1fr;gap:38px}.controls{border-right:1px solid var(--line);padding-right:28px}.controls h2{font-family:Georgia,serif;font-weight:400;font-size:24px;margin:0 0 14px}.controls p{font-size:13px;color:var(--muted);line-height:1.6}label{display:block;font-size:12px;font-weight:650;margin-bottom:8px}input,button{font:inherit}input[type=text]{width:100%;padding:12px;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:4px}button{cursor:pointer;border-radius:4px;padding:12px 16px;border:1px solid var(--green);background:var(--green);color:white;font-size:13px;font-weight:600}button:disabled{opacity:.55;cursor:wait}.wide{width:100%;margin-top:10px}.secondary{background:transparent;color:var(--green)}.profiles{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0 20px}.profile{background:transparent;border-color:var(--line);color:var(--muted);padding:7px 10px;font-size:12px}.profile.active{background:var(--accent);color:var(--green);border-color:var(--green)}.divider{border-top:1px solid var(--line);padding-top:24px;margin-top:24px}input[type=file]{width:100%;font-size:12px;margin:8px 0}input::file-selector-button{border:1px solid var(--line);padding:8px;background:white;margin-right:10px;color:var(--ink);border-radius:4px}.note{font-size:11px!important}.results-head{display:flex;justify-content:space-between;align-items:start;gap:10px;margin-bottom:20px}.results-head h2{font-family:Georgia,serif;font-weight:400;font-size:29px;margin:0 0 8px}.results-head p{margin:0;font-size:12px;color:var(--muted);line-height:1.5}.badge{font-size:10px;letter-spacing:1px;text-transform:uppercase;background:var(--accent);color:var(--green);padding:8px;white-space:nowrap;border-radius:3px}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.card{background:#faf9f5;border:1px solid var(--line);border-radius:5px;overflow:hidden;display:flex;flex-direction:column}.card-top{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:12px 17px;font-size:11px;color:var(--muted)}.rank{font-family:Georgia,serif;font-size:16px;color:var(--green)}.card-body{padding:20px;flex:1}.card h3{font-family:Georgia,serif;font-weight:400;line-height:1.2;font-size:24px;margin:0 0 9px}.year{font-size:11px;color:var(--muted);letter-spacing:1px}.overview{font-size:13px;line-height:1.6;color:var(--muted);margin:16px 0 0}.card-foot{padding:12px 20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font-size:11px}.card-foot a{color:var(--green);text-decoration:none}.score strong{font-size:18px;font-weight:550}.message{font-size:13px;line-height:1.6;border-left:3px solid var(--green);padding:10px 15px;margin:18px 0;background:var(--accent)}.message.error{border-color:#aa4b30;background:#f5e5dd;color:#753521}[hidden]{display:none!important}details{margin-top:30px;border-top:1px solid var(--line);padding-top:16px}summary{cursor:pointer;color:var(--muted);font-size:12px}pre{background:#e9ece4;color:#334635;padding:16px;border-radius:4px;max-height:300px;overflow:auto;font-size:11px;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere}footer{margin-top:44px;border-top:1px solid var(--line);padding-top:20px;color:var(--muted);display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:11px;line-height:1.6}footer a{color:var(--green)}.empty{padding:35px 0;color:var(--muted)}:focus-visible{outline:3px solid #8caa78;outline-offset:3px}
+@media(min-width:1150px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}.card h3{font-size:22px}}@media(max-width:800px){main{padding-top:32px}.workspace{grid-template-columns:1fr}.controls{border-right:0;padding:0}.stats{gap:22px}.stat strong{font-size:22px}.controls .divider{margin-top:20px}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(min-width:560px) and (max-width:800px){.workspace{grid-template-columns:180px 1fr;gap:22px}.controls{border-right:1px solid var(--line);padding-right:18px}.cards{grid-template-columns:1fr}.controls h2{font-size:21px}main{padding-top:24px}h1{font-size:38px}.intro{font-size:13px}.stats{margin:24px 0}}@media(max-width:480px){.cards{grid-template-columns:1fr}.stats{gap:14px;justify-content:space-between}.stat span{font-size:9px}.live{font-size:9px}.results-head{flex-direction:column}}
+</style>
+</head>
+<body>
+<header><div class="brand">indie <span>recs</span></div><div class="live" id="connection">Connecting to local API</div></header>
+<main>
+<div class="eyebrow">A recommendation engine for curious viewers</div>
+<h1>Your next favorite film<br>is probably <em>indie.</em></h1>
+<p class="intro">Start with what you've watched. Discover something you haven't. This demo uses the real recommendation API and fictional rating histories.</p>
+<div class="stats" aria-label="Database statistics">
+<div class="stat"><strong id="users">—</strong><span>Profiles</span></div><div class="stat"><strong id="movies">—</strong><span>Films</span></div><div class="stat"><strong id="indie_movies">—</strong><span>Tagged indie</span></div><div class="stat"><strong id="ratings">—</strong><span>Ratings</span></div>
+</div>
+<div class="workspace">
+<aside class="controls">
+<h2>Pick a viewer.</h2><p>Compare recommendations across the sample profiles, or enter a new username to try the popular-film fallback.</p>
+<form id="recommend-form"><label for="username">Viewer username</label><input type="text" id="username" value="maya" maxlength="255" required autocomplete="off"><button class="wide" id="recommend-button" type="submit">Find my next film</button></form>
+<div class="profiles" aria-label="Sample viewers"><button class="profile active" data-user="maya">Maya</button><button class="profile" data-user="jordan">Jordan</button><button class="profile" data-user="sam">Sam</button><button class="profile" data-user="riley">Riley</button></div>
+<div class="divider"><h2>Bring in ratings.</h2><p>Upload a prepared CSV to update profiles and retrain the model. Or try the included small sample for Alice, Bob, and Carol.</p>
+<button class="wide secondary" id="sample-button">Import sample ratings</button>
+<form id="upload-form"><label for="csv" style="margin-top:20px">Your CSV file</label><input type="file" id="csv" accept=".csv,text/csv" required><button class="wide secondary" type="submit" id="upload-button">Upload &amp; train</button></form><p class="note">Columns: Username, Movie Name, Year, Rating10. Uploading replaces ratings for existing user/movie pairs.</p></div>
+</aside>
+<section aria-label="Recommendations">
+<div class="results-head"><div><h2 id="result-title">Finding films for Maya…</h2><p id="result-subtitle">Loading the saved model and movie catalog.</p></div><span class="badge" id="strategy" hidden></span></div>
+<div class="message" id="status" role="status" aria-live="polite" hidden></div>
+<div class="cards" id="cards" aria-live="polite"></div>
+<details><summary>See the API requests and responses</summary><pre id="api-log">Waiting for the API…</pre></details>
+</section>
+</div>
+<footer><span>Local demo · Synthetic ratings · Indie tags are based on metadata rules.</span><span>Movie metadata from <a href="https://www.themoviedb.org/" target="_blank" rel="noopener">TMDB</a>. This product uses the TMDB API but is not endorsed or certified by TMDB. <a href="/docs" target="_blank" rel="noopener">API docs</a></span></footer>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+let requestVersion = 0, uploading = false;
+const activity = [];
+function notice(message, error=false){$('status').textContent=message;$('status').classList.toggle('error',error);$('status').hidden=!message;}
+async function api(path,options={}){
+ const start=performance.now();let response;
+ try{response=await fetch(path,options);}catch(error){throw new Error('The local API is unavailable. Check that the server is running.');}
+ const body=await response.json();
+ activity.unshift({request:(options.method||'GET')+' '+path,status:response.status,elapsed_ms:Math.round(performance.now()-start),response:body});
+ $('api-log').textContent=JSON.stringify(activity.slice(0,5),null,2);
+ if(!response.ok)throw new Error(typeof body.detail==='string'?body.detail:JSON.stringify(body.detail||body));
+ return body;
+}
+async function stats(){const data=await api('/stats');for(const key of ['users','movies','indie_movies','ratings'])$(key).textContent=data[key].toLocaleString();}
+function element(tag,className,text){const el=document.createElement(tag);if(className)el.className=className;if(text!==undefined)el.textContent=text;return el;}
+function render(data){
+ $('result-title').textContent='Films for '+data.user_id;
+ const personalized=data.strategy==='cf';
+ $('result-subtitle').textContent=personalized?'Ranked by the SVD model. Films already rated by this viewer are excluded.':'Popular indie films: no trained profile is available, or personalized candidates are exhausted.';
+ $('strategy').textContent=personalized?'Personalized · SVD':'Popular-film fallback';$('strategy').hidden=false;
+ $('cards').replaceChildren();
+ if(!data.recommendations.length){$('cards').append(element('p','empty','No eligible films yet. Import some ratings to build the catalog.'));return;}
+ data.recommendations.forEach((film,index)=>{
+  const card=element('article','card'),top=element('div','card-top'),body=element('div','card-body'),foot=element('div','card-foot');
+  top.append(element('span','rank',String(index+1).padStart(2,'0')),element('span','',film.is_indie?'TAGGED INDIE':'UNTAGGED'));
+  body.append(element('h3','',film.title));if(film.year)body.append(element('span','year',film.year));
+  if(film.overview)body.append(element('p','overview',film.overview.length>210?film.overview.slice(0,207)+'…':film.overview));
+  const score=element('span','score');if(film.predicted_rating!==null){score.append(element('strong','',film.predicted_rating.toFixed(1)),document.createTextNode(' / 10 '+(personalized?'predicted':'average')));}else score.textContent='No local ratings';
+  const link=element('a','', 'View on TMDB ↗');link.href='https://www.themoviedb.org/movie/'+encodeURIComponent(film.tmdb_id);link.target='_blank';link.rel='noopener';foot.append(score,link);card.append(top,body,foot);$('cards').append(card);
+ });
+}
+async function recommend(){
+ const name=$('username').value.trim();if(!name)return;const version=++requestVersion;
+ $('recommend-button').disabled=true;$('recommend-button').textContent='Finding films…';notice('');
+ document.querySelectorAll('[data-user]').forEach(b=>b.classList.toggle('active',b.dataset.user===name));
+ try{const data=await api('/recommend/'+encodeURIComponent(name));if(version===requestVersion)render(data);}catch(error){if(version===requestVersion)notice(error.message,true);}finally{if(version===requestVersion){$('recommend-button').disabled=uploading;$('recommend-button').textContent='Find my next film';}}
+}
+function uploadState(busy){uploading=busy;for(const id of ['sample-button','upload-button','recommend-button','csv','username'])$(id).disabled=busy;document.querySelectorAll('[data-user]').forEach(b=>b.disabled=busy);}
+async function upload(file){
+ uploadState(true);notice('Matching movies and training the model. This can take a moment…');
+ try{const form=new FormData();form.append('file',file);const data=await api('/upload',{method:'POST',body:form});await stats();
+  if(data.user_ids.length)$('username').value=data.user_ids[0];await recommend();
+  notice('Imported '+data.imported_ratings+' ratings across '+data.user_ids.length+' profiles. '+(data.model_retrained?'Model retrained. ':'No model was trained. ')+(data.warnings.length?'Warnings: '+data.warnings.join(' · '):'')+' Recommendations above are from the updated API.');
+ }catch(error){notice(error.message,true);}finally{uploadState(false);}
+}
+$('recommend-form').addEventListener('submit',e=>{e.preventDefault();recommend();});
+document.querySelectorAll('[data-user]').forEach(b=>b.addEventListener('click',()=>{$('username').value=b.dataset.user;recommend();}));
+$('upload-form').addEventListener('submit',e=>{e.preventDefault();const file=$('csv').files[0];if(file)upload(file);});
+$('sample-button').addEventListener('click',async()=>{
+ uploadState(true);notice('Loading the sample CSV…');
+ try{const response=await fetch('/demo/sample');if(!response.ok)throw new Error('Could not load the sample CSV.');await upload(new File([await response.blob()],'letterboxd_ratings.csv',{type:'text/csv'}));}catch(error){notice(error.message,true);}finally{uploadState(false);}
+});
+(async()=>{try{await api('/health');$('connection').textContent='Local API connected';await stats();await recommend();}catch(error){$('connection').textContent='API unavailable';notice(error.message,true);}})();
+</script>
+</body></html>
