@@ -49,6 +49,14 @@ DATABASE_URL=postgresql+psycopg2://user:password@localhost:5432/indie_recs
 
 Other settings, including the model path and metadata cache lifetime, are listed in `.env.example`.
 
+## Visual demo
+
+With the API running, open [localhost:8000/demo](http://127.0.0.1:8000/demo). The page lets you switch sample profiles, import a CSV, and see real recommendations with predicted ratings. You can also expand the request log to inspect the API responses.
+
+The demo uses the configured database and model. On a fresh installation, import a sample CSV first; the four profile shortcuts use the larger synthetic sample. The small sample button imports Alice, Bob, and Carol.
+
+See [frontend integration](docs/frontend-integration.md) for request examples and what a separate frontend needs.
+
 ## CSV format
 
 The importer expects a prepared CSV with these columns:
@@ -136,6 +144,8 @@ app/           API, database models, importer, TMDB client, and recommendation l
 scripts/       Sample generation, evaluation, retraining, retagging, and ZIP packaging
 sample_data/   Fictional ratings in the expected CSV format
 tests/         Unit tests
+demo/          Browser demo served by the API
+docs/          Frontend integration notes
 data/          Local database (excluded from Git)
 models/        Trained model (excluded from Git)
 ```
