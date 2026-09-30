@@ -4,10 +4,12 @@ import logging
 from contextlib import asynccontextmanager
 
 from fastapi import Depends, FastAPI, File, HTTPException, UploadFile
+from fastapi.responses import FileResponse
 from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
 from app.database import get_db, init_db
+from app.config import ROOT_DIR
 from app.importer import import_letterboxd_csv
 from app.models import Movie, Rating, User
 from app.recommend import recommend_for_user
@@ -30,6 +32,20 @@ app = FastAPI(
     version="1.0.0",
     lifespan=lifespan,
 )
+
+
+@app.get("/demo", include_in_schema=False)
+def demo() -> FileResponse:
+    return FileResponse(ROOT_DIR / "demo" / "index.html")
+
+
+@app.get("/demo/sample", include_in_schema=False)
+def demo_sample() -> FileResponse:
+    return FileResponse(
+        ROOT_DIR / "sample_data" / "letterboxd_ratings.csv",
+        media_type="text/csv",
+        filename="letterboxd_ratings.csv",
+    )
 
 
 @app.get("/health")
