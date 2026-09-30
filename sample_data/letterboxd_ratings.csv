@@ -1,0 +1,20 @@
+Username,Movie Name,Year,Rating10,Watched Date,Rating5
+alice,Everything Everywhere All at Once,2022,10,2023-01-12,5
+alice,Moonlight,2016,9,2022-06-01,4.5
+alice,The Grand Budapest Hotel,2014,8,2021-11-03,4
+alice,Parasite,2019,9,2020-02-14,4.5
+alice,Lady Bird,2017,8,2018-05-20,4
+alice,Dune,2021,7,2021-12-01,3.5
+alice,The Batman,2022,6,2022-04-10,3
+bob,Uncut Gems,2019,9,2020-01-08,4.5
+bob,The Witch,2015,8,2019-10-31,4
+bob,Hereditary,2018,9,2019-01-15,4.5
+bob,Avengers: Endgame,2019,7,2019-05-01,3.5
+bob,Past Lives,2023,10,2023-07-02,5
+bob,Aftersun,2022,9,2023-03-11,4.5
+carol,The Florida Project,2017,10,2018-02-02,5
+carol,Moonlight,2016,10,2017-01-20,5
+carol,Lady Bird,2017,7,2018-06-01,3.5
+carol,Inception,2010,8,2011-07-20,4
+carol,The Banshees of Inisherin,2022,9,2023-01-05,4.5
+carol,Nomadland,2020,8,2021-04-12,4
