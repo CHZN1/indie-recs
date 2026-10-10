@@ -17,7 +17,6 @@ logger = logging.getLogger(__name__)
 _MIN_REQUEST_INTERVAL = 0.03
 _last_request_at = 0.0
 _MISSING = object()
-_memory: dict[str, Any] = {}
 _http: httpx.Client | None = None
 
 
@@ -41,22 +40,18 @@ def _throttle() -> None:
 
 
 def _cache_get(db: Session, key: str) -> Any:
-    if key in _memory:
-        return _memory[key]
     row = db.get(TmdbCache, key)
     if row is None:
         return _MISSING
-    ttl = timedelta(days=get_settings().tmdb_cache_ttl_days)
+    ttl = timedelta(hours=24) if key.startswith("providers:") else timedelta(days=get_settings().tmdb_cache_ttl_days)
     if datetime.utcnow() - row.created_at > ttl:
         db.delete(row)
         return _MISSING
     payload = json.loads(row.payload)
-    _memory[key] = payload
     return payload
 
 
 def _cache_set(db: Session, key: str, payload: Any) -> None:
-    _memory[key] = payload
     existing = db.get(TmdbCache, key)
     encoded = json.dumps(payload)
     if existing:
@@ -167,3 +162,42 @@ def get_movie_bundle(db: Session, tmdb_id: int) -> dict[str, Any]:
     }
     _cache_set(db, cache_key, bundle)
     return bundle
+
+
+def get_watch_providers(db: Session, tmdb_id: int, region: str) -> dict[str, Any]:
+    key = f"providers:{tmdb_id}"
+    cached = _cache_get(db, key)
+    if cached is _MISSING:
+        cached = _get(f"/movie/{tmdb_id}/watch/providers", {})
+        _cache_set(db, key, cached)
+        db.commit()
+    country = (cached.get("results") or {}).get(region, {})
+    groups = {name: [
+        {"name": row["provider_name"], "logo_path": row.get("logo_path")}
+        for row in country.get(name, [])
+    ] for name in ("flatrate", "rent", "buy", "free", "ads")}
+    return {"tmdb_id": tmdb_id, "region": region, "link": country.get("link"),
+            "providers": groups, "source": "JustWatch via TMDB"}
+
+
+def get_creative_credits(db: Session, tmdb_id: int) -> dict[str, list[str]]:
+    """Cache factual credited people, without inferring a film's aesthetic."""
+    key = f"creative:{tmdb_id}"
+    cached = _cache_get(db, key)
+    if cached is not _MISSING:
+        return cached
+    payload = _get(f"/movie/{tmdb_id}/credits", {})
+    roles = {
+        "composers": "Original Music Composer",
+        "cinematographers": "Director of Photography",
+        "directors": "Director",
+        "editors": "Editor",
+    }
+    result = {
+        role: sorted({row['name'].strip() for row in payload.get('crew', [])
+                      if row.get('job') == job and row.get('name', '').strip()})
+        for role, job in roles.items()
+    }
+    _cache_set(db, key, result)
+    db.commit()
+    return result

@@ -6,6 +6,7 @@ from sqlalchemy.orm import Session
 from app.models import Movie, Rating, User
 from app.schemas import RecommendationItem, RecommendResponse
 from app.training import load_model
+from app.discovery import eligible_ids
 
 
 def _movie_to_item(movie: Movie, predicted: float | None) -> RecommendationItem:
@@ -22,14 +23,15 @@ def _movie_to_item(movie: Movie, predicted: float | None) -> RecommendationItem:
     )
 
 
-def popular_indie(db: Session, exclude_ids: set[int], limit: int = 10) -> list[RecommendationItem]:
+def popular_indie(db: Session, exclude_ids: set[int], limit: int = 10, *, scope: str = "indie") -> list[RecommendationItem]:
+    eligible = eligible_ids(db, db.scalars(select(Movie)).all(), scope)
     avg_rating = func.avg(Rating.rating).label("avg_rating")
     rating_count = func.count(Rating.id).label("rating_count")
     rows = (
         db.execute(
             select(Movie, avg_rating, rating_count)
             .outerjoin(Rating, Rating.movie_id == Movie.id)
-            .where(Movie.is_indie.is_(True))
+            .where(Movie.id.in_(eligible))
             .group_by(Movie.id)
             .order_by(rating_count.desc(), avg_rating.desc(), Movie.popularity.desc())
         )
@@ -45,15 +47,18 @@ def popular_indie(db: Session, exclude_ids: set[int], limit: int = 10) -> list[R
     return items
 
 
-def recommend_for_user(db: Session, user_id: str, limit: int = 10) -> RecommendResponse:
+def recommend_for_user(db: Session, user_id: str, limit: int = 10, *, scope: str = "indie") -> RecommendResponse:
+    if scope not in ("indie", "all"):
+        raise ValueError("scope must be indie or all")
     user = db.scalar(select(User).where(User.user_id == user_id))
     rated_ids: set[int] = set()
     if user:
         rated_ids = set(db.scalars(select(Rating.movie_id).where(Rating.user_pk == user.id)).all())
 
     model = load_model()
-    indie_movies = db.scalars(select(Movie).where(Movie.is_indie.is_(True))).all()
-    candidates = [m for m in indie_movies if m.id not in rated_ids]
+    indie_movies = db.scalars(select(Movie)).all()
+    eligible = eligible_ids(db, indie_movies, scope)
+    candidates = [m for m in indie_movies if m.id not in rated_ids and m.id in eligible]
 
     if (
         model is None
@@ -64,7 +69,7 @@ def recommend_for_user(db: Session, user_id: str, limit: int = 10) -> RecommendR
         return RecommendResponse(
             user_id=user_id,
             strategy="cold_start",
-            recommendations=popular_indie(db, rated_ids, limit),
+            recommendations=popular_indie(db, rated_ids, limit, scope=scope),
         )
 
     algo = model["algo"]
