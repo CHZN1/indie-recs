@@ -1,0 +1,198 @@
+{
+  "synthetic": true,
+  "purpose": "Consumed development challenge cases with original direction labels preserved. Used for targeted fixes; not unseen validation or independent human judgments.",
+  "cases": [
+    {
+      "id": "v01",
+      "group": "explicit",
+      "text": "Loved how Hans Zimmer carried the quiet scenes.",
+      "rating": 9,
+      "feature": "composer:hans zimmer",
+      "expected": 1
+    },
+    {
+      "id": "v02",
+      "group": "explicit",
+      "text": "I prefer that pastel palette to the usual gray interiors.",
+      "rating": 7,
+      "feature": "visual:pastel palette",
+      "expected": 1
+    },
+    {
+      "id": "v03",
+      "group": "explicit",
+      "text": "The jazz percussion was hypnotic throughout.",
+      "rating": 8,
+      "feature": "music:jazz percussion",
+      "expected": 1
+    },
+    {
+      "id": "v04",
+      "group": "explicit",
+      "text": "I disliked the symmetrical framing; every room felt staged.",
+      "rating": 8,
+      "feature": "visual:symmetrical framing",
+      "expected": -1
+    },
+    {
+      "id": "v05",
+      "group": "negation",
+      "text": "I never liked Hans Zimmer on this one.",
+      "rating": 7,
+      "feature": "composer:hans zimmer",
+      "expected": -1
+    },
+    {
+      "id": "v06",
+      "group": "negation",
+      "text": "I don't really enjoy the jazz drumming here.",
+      "rating": 8,
+      "feature": "music:jazz percussion",
+      "expected": -1
+    },
+    {
+      "id": "v07",
+      "group": "negation",
+      "text": "The pastel colors were not beautiful to me.",
+      "rating": 9,
+      "feature": "visual:pastel palette",
+      "expected": -1
+    },
+    {
+      "id": "v08",
+      "group": "negation",
+      "text": "I wouldn't call Hans Zimmer's score great.",
+      "rating": 6,
+      "feature": "composer:hans zimmer",
+      "expected": -1
+    },
+    {
+      "id": "v09",
+      "group": "mixed_aspects",
+      "text": "I loved Hans Zimmer although the ending was boring.",
+      "rating": 3,
+      "feature": "composer:hans zimmer",
+      "expected": 1
+    },
+    {
+      "id": "v10",
+      "group": "mixed_aspects",
+      "text": "The pastel colors were lovely, but the script was annoying.",
+      "rating": 3,
+      "feature": "visual:pastel palette",
+      "expected": 1
+    },
+    {
+      "id": "v11",
+      "group": "mixed_aspects",
+      "text": "Beautiful acting beside distracting jazz percussion.",
+      "rating": 9,
+      "feature": "music:jazz percussion",
+      "expected": -1
+    },
+    {
+      "id": "v12",
+      "group": "mixed_aspects",
+      "text": "I love the cast, not Hans Zimmer's score.",
+      "rating": 9,
+      "feature": "composer:hans zimmer",
+      "expected": -1
+    },
+    {
+      "id": "v13",
+      "group": "factual",
+      "text": "Hans Zimmer wrote the score. The costumes were gorgeous.",
+      "rating": 9,
+      "feature": "composer:hans zimmer",
+      "expected": 0
+    },
+    {
+      "id": "v14",
+      "group": "factual",
+      "text": "The interview discussed the pastel palette.",
+      "rating": 8,
+      "feature": "visual:pastel palette",
+      "expected": 0
+    },
+    {
+      "id": "v15",
+      "group": "factual",
+      "text": "My friend is a Hans Zimmer fan; I have no opinion on the score.",
+      "rating": 8,
+      "feature": "composer:hans zimmer",
+      "expected": 0
+    },
+    {
+      "id": "v16",
+      "group": "factual",
+      "text": "Fans say the Birdman score is amazing. I haven't listened to it.",
+      "rating": 7,
+      "feature": "music:jazz percussion",
+      "expected": 0
+    },
+    {
+      "id": "v17",
+      "group": "sarcasm",
+      "text": "Yeah right, the jazz drumming is amazing. As if.",
+      "rating": 7,
+      "feature": "music:jazz percussion",
+      "expected": -1
+    },
+    {
+      "id": "v18",
+      "group": "sarcasm",
+      "text": "Wonderful, yet another Hans Zimmer wall of noise. Lucky us.",
+      "rating": 8,
+      "feature": "composer:hans zimmer",
+      "expected": -1
+    },
+    {
+      "id": "v19",
+      "group": "sarcasm",
+      "text": "Great pastel colors. Because apparently that fixes everything.",
+      "rating": 5,
+      "feature": "visual:pastel palette",
+      "expected": -1
+    },
+    {
+      "id": "v20",
+      "group": "sarcasm",
+      "text": "Oh great, symmetrical framing again. Please stop.",
+      "rating": 8,
+      "feature": "visual:symmetrical framing",
+      "expected": -1
+    },
+    {
+      "id": "v21",
+      "group": "implicit",
+      "text": "Hans Zimmer's music is the reason I'll revisit this.",
+      "rating": 8,
+      "feature": "composer:hans zimmer",
+      "expected": 1
+    },
+    {
+      "id": "v22",
+      "group": "implicit",
+      "text": "Those pastel colors stayed with me for days.",
+      "rating": 7,
+      "feature": "visual:pastel palette",
+      "expected": 1
+    },
+    {
+      "id": "v23",
+      "group": "implicit",
+      "text": "The jazz percussion gave every scene a pulse I wanted more of.",
+      "rating": 6,
+      "feature": "music:jazz percussion",
+      "expected": 1
+    },
+    {
+      "id": "v24",
+      "group": "implicit",
+      "text": "The symmetrical framing kept pulling me out of the story.",
+      "rating": 8,
+      "feature": "visual:symmetrical framing",
+      "expected": -1
+    }
+  ]
+}
