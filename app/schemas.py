@@ -15,7 +15,7 @@ class RecommendationItem(BaseModel):
 
 class RecommendResponse(BaseModel):
     user_id: str
-    strategy: str = Field(description="cf for collaborative filtering, cold_start for popular indie fallback")
+    strategy: str = Field(description="cf for collaborative filtering, cold_start for popular catalog fallback")
     recommendations: list[RecommendationItem]
 
 
@@ -27,5 +27,6 @@ class UploadResponse(BaseModel):
     movies_created: int
     unique_titles_resolved: int = 0
     elapsed_seconds: float = 0.0
+    training_job_id: int | None = None
     model_retrained: bool
     warnings: list[str] = []

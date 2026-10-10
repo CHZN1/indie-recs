@@ -1,0 +1,3907 @@
+{
+  "synthetic": true,
+  "seed": 42,
+  "purpose": "Language robustness and influence controls. Constructed labels are not real user preferences or evidence of recommendation quality.",
+  "profiles": [
+    {
+      "id": "synthetic-001",
+      "topic": "zimmer",
+      "style": "brief",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 1,
+      "reviews": [
+        {
+          "item_id": 900000,
+          "rating": 10,
+          "text": "I love Hanz Zimmer's score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900001,
+          "rating": 5,
+          "text": "The central friendship worked for me.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900002,
+          "rating": 5,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900003,
+          "rating": 10,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900004,
+          "rating": 7,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-002",
+      "topic": "anderson",
+      "style": "brief",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 2,
+      "reviews": [
+        {
+          "item_id": 900005,
+          "rating": 6,
+          "text": "I love the Wes Anderson aesthetic.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900006,
+          "rating": 6,
+          "text": "I enjoyed the Wes Anderson aesthetic.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900007,
+          "rating": 6,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900008,
+          "rating": 10,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900009,
+          "rating": 5,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-003",
+      "topic": "birdman",
+      "style": "brief",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 3,
+      "reviews": [
+        {
+          "item_id": 900010,
+          "rating": 10,
+          "text": "I love the Birdman-style drum score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900011,
+          "rating": 10,
+          "text": "I enjoyed the Birdman-style drum score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900012,
+          "rating": 9,
+          "text": "Really liked the Birdman-style drum score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900013,
+          "rating": 5,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900014,
+          "rating": 9,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-004",
+      "topic": "zimmer",
+      "style": "chatty",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 4,
+      "reviews": [
+        {
+          "item_id": 900015,
+          "rating": 8,
+          "text": "Okay, I loved Hans Zimmer's score. The plot lost me a little, though.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900016,
+          "rating": 5,
+          "text": "Honestly, Hans Zimmer's score is what I liked most.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900017,
+          "rating": 5,
+          "text": "I would watch it again for Hans Zimmer's score. I loved it.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900018,
+          "rating": 5,
+          "text": "I liked Hans Zimmer's score way more than I expected.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900019,
+          "rating": 6,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-005",
+      "topic": "anderson",
+      "style": "chatty",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 5,
+      "reviews": [
+        {
+          "item_id": 900020,
+          "rating": 6,
+          "text": "Okay, I loved the Wes Anderson aesthetic. The plot lost me a little, though.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900021,
+          "rating": 9,
+          "text": "Honestly, the Wes Anderson aesthetic is what I liked most.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900022,
+          "rating": 9,
+          "text": "I would watch it again for the Wes Anderson aesthetic. I loved it.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900023,
+          "rating": 5,
+          "text": "I liked the Wes Anderson aesthetic way more than I expected.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900024,
+          "rating": 9,
+          "text": "The ending was a mess, but I loved the Wes Anderson aesthetic.",
+          "expected_direction": 1
+        }
+      ]
+    },
+    {
+      "id": "synthetic-006",
+      "topic": "birdman",
+      "style": "chatty",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 1,
+      "reviews": [
+        {
+          "item_id": 900025,
+          "rating": 6,
+          "text": "Okay, I loved the Birdman-style drum score. The plot lost me a little, though.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900026,
+          "rating": 10,
+          "text": "The central friendship worked for me.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900027,
+          "rating": 10,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900028,
+          "rating": 10,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900029,
+          "rating": 9,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-007",
+      "topic": "zimmer",
+      "style": "detailed",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 2,
+      "reviews": [
+        {
+          "item_id": 900030,
+          "rating": 8,
+          "text": "I enjoyed Hans Zimmer's score because it gave the scenes a shape the dialogue never quite found.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900031,
+          "rating": 6,
+          "text": "I loved Hans Zimmer's score. It held my attention even when the middle section dragged.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900032,
+          "rating": 8,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900033,
+          "rating": 9,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900034,
+          "rating": 7,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-008",
+      "topic": "anderson",
+      "style": "detailed",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 3,
+      "reviews": [
+        {
+          "item_id": 900035,
+          "rating": 5,
+          "text": "I enjoyed the Wes Andersson aesthetic because it gave the scenes a shape the dialogue never quite found.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900036,
+          "rating": 6,
+          "text": "I loved the Wes Andersson aesthetic. It held my attention even when the middle section dragged.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900037,
+          "rating": 10,
+          "text": "The actors were fine, but I preferred the Wes Andersson aesthetic. That stayed with me afterward.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900038,
+          "rating": 8,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900039,
+          "rating": 7,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-009",
+      "topic": "birdman",
+      "style": "detailed",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 4,
+      "reviews": [
+        {
+          "item_id": 900040,
+          "rating": 7,
+          "text": "I enjoyed the Birdman-style drum score because it gave the scenes a shape the dialogue never quite found.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900041,
+          "rating": 6,
+          "text": "I loved the Birdman-style drum score. It held my attention even when the middle section dragged.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900042,
+          "rating": 6,
+          "text": "The actors were fine, but I preferred the Birdman-style drum score. That stayed with me afterward.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900043,
+          "rating": 7,
+          "text": "I liked the story, and I loved the Birdman-style drum score. The two worked together for me.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900044,
+          "rating": 5,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-010",
+      "topic": "zimmer",
+      "style": "mixed_low_rating",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 5,
+      "reviews": [
+        {
+          "item_id": 900045,
+          "rating": 1,
+          "text": "I disliked the story, but I loved Hans Zimmer's score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900046,
+          "rating": 4,
+          "text": "This was boring, but Hans Zimmer's score was great.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900047,
+          "rating": 1,
+          "text": "I hated the ending. I enjoyed Hans Zimmer's score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900048,
+          "rating": 3,
+          "text": "The acting left me cold, but I liked Hans Zimmer's score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900049,
+          "rating": 3,
+          "text": "I would not recommend the film overall. I am a fan of Hans Zimmer's score, though.",
+          "expected_direction": 1
+        }
+      ]
+    },
+    {
+      "id": "synthetic-011",
+      "topic": "anderson",
+      "style": "mixed_low_rating",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 1,
+      "reviews": [
+        {
+          "item_id": 900050,
+          "rating": 3,
+          "text": "I disliked the story, but I loved the Wes Anderson aesthetic.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900051,
+          "rating": 1,
+          "text": "The central friendship worked for me.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900052,
+          "rating": 4,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900053,
+          "rating": 1,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900054,
+          "rating": 4,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-012",
+      "topic": "birdman",
+      "style": "mixed_low_rating",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 2,
+      "reviews": [
+        {
+          "item_id": 900055,
+          "rating": 1,
+          "text": "I disliked the story, but I loved the Birdman-style drum score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900056,
+          "rating": 3,
+          "text": "This was boring, but the Birdman-style drum score was great.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900057,
+          "rating": 3,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900058,
+          "rating": 2,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900059,
+          "rating": 1,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-013",
+      "topic": "zimmer",
+      "style": "negative",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 3,
+      "reviews": [
+        {
+          "item_id": 900060,
+          "rating": 5,
+          "text": "I hated Hans Zimmer's score.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900061,
+          "rating": 10,
+          "text": "I liked the story, but Hans Zimmer's score was distracting.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900062,
+          "rating": 6,
+          "text": "I am not a fan of Hans Zimmer's score.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900063,
+          "rating": 7,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900064,
+          "rating": 5,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-014",
+      "topic": "anderson",
+      "style": "negative",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 4,
+      "reviews": [
+        {
+          "item_id": 900065,
+          "rating": 6,
+          "text": "I hated the Wes Anderson aesthetic.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900066,
+          "rating": 5,
+          "text": "I liked the story, but the Wes Anderson aesthetic was distracting.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900067,
+          "rating": 8,
+          "text": "I am not a fan of the Wes Anderson aesthetic.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900068,
+          "rating": 7,
+          "text": "I did not enjoy the Wes Anderson aesthetic.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900069,
+          "rating": 8,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-015",
+      "topic": "birdman",
+      "style": "negative",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 5,
+      "reviews": [
+        {
+          "item_id": 900070,
+          "rating": 10,
+          "text": "I hated the Birdman-style drum score.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900071,
+          "rating": 7,
+          "text": "I liked the story, but the Birdman-style drum score was distracting.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900072,
+          "rating": 6,
+          "text": "I am not a fan of the Birdman-style drum score.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900073,
+          "rating": 7,
+          "text": "I did not enjoy the Birdman-style drum score.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900074,
+          "rating": 7,
+          "text": "I did not love the Birdman-style drum score. The cast was great.",
+          "expected_direction": -1
+        }
+      ]
+    },
+    {
+      "id": "synthetic-016",
+      "topic": "zimmer",
+      "style": "factual",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 1,
+      "reviews": [
+        {
+          "item_id": 900075,
+          "rating": 6,
+          "text": "The credits list Hans Zimmer. The ending was good.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900076,
+          "rating": 10,
+          "text": "The central friendship worked for me.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900077,
+          "rating": 7,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900078,
+          "rating": 10,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900079,
+          "rating": 10,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-017",
+      "topic": "anderson",
+      "style": "factual",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 2,
+      "reviews": [
+        {
+          "item_id": 900080,
+          "rating": 10,
+          "text": "The credits list Wes Anderson. The ending was good.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900081,
+          "rating": 5,
+          "text": "Someone mentioned Wes Anderson. I liked the acting.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900082,
+          "rating": 9,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900083,
+          "rating": 10,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900084,
+          "rating": 6,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-018",
+      "topic": "birdman",
+      "style": "factual",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 3,
+      "reviews": [
+        {
+          "item_id": 900085,
+          "rating": 9,
+          "text": "The credits list Birdman. The ending was good.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900086,
+          "rating": 10,
+          "text": "Someone mentioned Birdman. I liked the acting.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900087,
+          "rating": 6,
+          "text": "the Birdman-style drum score comes up in the discussion of this film.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900088,
+          "rating": 6,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900089,
+          "rating": 8,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-019",
+      "topic": "zimmer",
+      "style": "sarcastic",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 4,
+      "reviews": [
+        {
+          "item_id": 900090,
+          "rating": 8,
+          "text": "Oh great, more Hans Zimmer's score. Exactly what I did not need.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900091,
+          "rating": 7,
+          "text": "Amazing, another round of Hans Zimmer's score. Spare me.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900092,
+          "rating": 10,
+          "text": "Just what I wanted: Hans Zimmer's score, again.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900093,
+          "rating": 10,
+          "text": "Great, Hans Zimmer's score. What a surprise.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900094,
+          "rating": 9,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-020",
+      "topic": "anderson",
+      "style": "sarcastic",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 5,
+      "reviews": [
+        {
+          "item_id": 900095,
+          "rating": 6,
+          "text": "Oh great, more the Wes Anderson aesthetic. Exactly what I did not need.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900096,
+          "rating": 10,
+          "text": "Amazing, another round of the Wes Anderson aesthetic. Spare me.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900097,
+          "rating": 7,
+          "text": "Just what I wanted: the Wes Anderson aesthetic, again.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900098,
+          "rating": 5,
+          "text": "Great, the Wes Anderson aesthetic. What a surprise.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900099,
+          "rating": 6,
+          "text": "Love that we got more the Wes Anderson aesthetic. Said absolutely nobody in my house.",
+          "expected_direction": -1
+        }
+      ]
+    },
+    {
+      "id": "synthetic-021",
+      "topic": "birdman",
+      "style": "sarcastic",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 1,
+      "reviews": [
+        {
+          "item_id": 900100,
+          "rating": 5,
+          "text": "Oh great, more the Birdman-style drum score. Exactly what I did not need.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900101,
+          "rating": 7,
+          "text": "The central friendship worked for me.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900102,
+          "rating": 8,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900103,
+          "rating": 7,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900104,
+          "rating": 5,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-022",
+      "topic": "zimmer",
+      "style": "implicit",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 2,
+      "reviews": [
+        {
+          "item_id": 900105,
+          "rating": 6,
+          "text": "The swelling score was my favorite part, especially the Zimmer cues.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900106,
+          "rating": 9,
+          "text": "The swelling score was my favorite part, especially the Zimmer cues. The plot was a different story.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900107,
+          "rating": 10,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900108,
+          "rating": 7,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900109,
+          "rating": 6,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-023",
+      "topic": "anderson",
+      "style": "implicit",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 3,
+      "reviews": [
+        {
+          "item_id": 900110,
+          "rating": 10,
+          "text": "Pastel corridors, dead-center frames, dollhouse sets. That is my kind of thing.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900111,
+          "rating": 8,
+          "text": "Pastel corridors, dead-center frames, dollhouse sets. That is my kind of thing. The plot was a different story.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900112,
+          "rating": 8,
+          "text": "Pastel corridors, dead-center frames, dollhouse sets. That is my kind of thing. I could have done without the ending.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900113,
+          "rating": 10,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900114,
+          "rating": 8,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-024",
+      "topic": "birdman",
+      "style": "implicit",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 4,
+      "reviews": [
+        {
+          "item_id": 900115,
+          "rating": 6,
+          "text": "Loose jazz percussion, all skittering rhythms and restless energy. More of that, please.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900116,
+          "rating": 7,
+          "text": "Loose jazz percussion, all skittering rhythms and restless energy. More of that, please. The plot was a different story.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900117,
+          "rating": 6,
+          "text": "Loose jazz percussion, all skittering rhythms and restless energy. More of that, please. I could have done without the ending.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900118,
+          "rating": 6,
+          "text": "Loose jazz percussion, all skittering rhythms and restless energy. More of that, please. That part stayed with me.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900119,
+          "rating": 10,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-025",
+      "topic": "zimmer",
+      "style": "brief",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 5,
+      "reviews": [
+        {
+          "item_id": 900120,
+          "rating": 9,
+          "text": "I love Hans Zimmer's score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900121,
+          "rating": 9,
+          "text": "I enjoyed Hans Zimmer's score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900122,
+          "rating": 7,
+          "text": "Really liked Hans Zimmer's score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900123,
+          "rating": 10,
+          "text": "Hans Zimmer's score was great.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900124,
+          "rating": 9,
+          "text": "I am a fan of Hans Zimmer's score.",
+          "expected_direction": 1
+        }
+      ]
+    },
+    {
+      "id": "synthetic-026",
+      "topic": "anderson",
+      "style": "brief",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 1,
+      "reviews": [
+        {
+          "item_id": 900125,
+          "rating": 8,
+          "text": "I love the Wes Anderson aesthetic.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900126,
+          "rating": 9,
+          "text": "The central friendship worked for me.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900127,
+          "rating": 8,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900128,
+          "rating": 7,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900129,
+          "rating": 6,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-027",
+      "topic": "birdman",
+      "style": "brief",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 2,
+      "reviews": [
+        {
+          "item_id": 900130,
+          "rating": 6,
+          "text": "I love the Birdman-style drum score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900131,
+          "rating": 9,
+          "text": "I enjoyed the Birdman-style drum score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900132,
+          "rating": 8,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900133,
+          "rating": 5,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900134,
+          "rating": 5,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-028",
+      "topic": "zimmer",
+      "style": "chatty",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 3,
+      "reviews": [
+        {
+          "item_id": 900135,
+          "rating": 5,
+          "text": "Okay, I loved Hans Zimmer's score. The plot lost me a little, though.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900136,
+          "rating": 6,
+          "text": "Honestly, Hans Zimmer's score is what I liked most.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900137,
+          "rating": 10,
+          "text": "I would watch it again for Hans Zimmer's score. I loved it.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900138,
+          "rating": 6,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900139,
+          "rating": 10,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-029",
+      "topic": "anderson",
+      "style": "chatty",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 4,
+      "reviews": [
+        {
+          "item_id": 900140,
+          "rating": 8,
+          "text": "Okay, I loved the Wes Andersson aesthetic. The plot lost me a little, though.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900141,
+          "rating": 9,
+          "text": "Honestly, the Wes Andersson aesthetic is what I liked most.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900142,
+          "rating": 5,
+          "text": "I would watch it again for the Wes Andersson aesthetic. I loved it.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900143,
+          "rating": 8,
+          "text": "I liked the Wes Andersson aesthetic way more than I expected.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900144,
+          "rating": 8,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-030",
+      "topic": "birdman",
+      "style": "chatty",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 5,
+      "reviews": [
+        {
+          "item_id": 900145,
+          "rating": 9,
+          "text": "Okay, I loved the Birdman-style drum score. The plot lost me a little, though.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900146,
+          "rating": 8,
+          "text": "Honestly, the Birdman-style drum score is what I liked most.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900147,
+          "rating": 9,
+          "text": "I would watch it again for the Birdman-style drum score. I loved it.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900148,
+          "rating": 7,
+          "text": "I liked the Birdman-style drum score way more than I expected.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900149,
+          "rating": 9,
+          "text": "The ending was a mess, but I loved the Birdman-style drum score.",
+          "expected_direction": 1
+        }
+      ]
+    },
+    {
+      "id": "synthetic-031",
+      "topic": "zimmer",
+      "style": "detailed",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 1,
+      "reviews": [
+        {
+          "item_id": 900150,
+          "rating": 5,
+          "text": "I enjoyed Hans Zimmer's score because it gave the scenes a shape the dialogue never quite found.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900151,
+          "rating": 10,
+          "text": "The central friendship worked for me.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900152,
+          "rating": 10,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900153,
+          "rating": 5,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900154,
+          "rating": 10,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-032",
+      "topic": "anderson",
+      "style": "detailed",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 2,
+      "reviews": [
+        {
+          "item_id": 900155,
+          "rating": 9,
+          "text": "I enjoyed the Wes Anderson aesthetic because it gave the scenes a shape the dialogue never quite found.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900156,
+          "rating": 7,
+          "text": "I loved the Wes Anderson aesthetic. It held my attention even when the middle section dragged.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900157,
+          "rating": 10,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900158,
+          "rating": 7,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900159,
+          "rating": 5,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-033",
+      "topic": "birdman",
+      "style": "detailed",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 3,
+      "reviews": [
+        {
+          "item_id": 900160,
+          "rating": 7,
+          "text": "I enjoyed the Birdman-style drum score because it gave the scenes a shape the dialogue never quite found.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900161,
+          "rating": 8,
+          "text": "I loved the Birdman-style drum score. It held my attention even when the middle section dragged.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900162,
+          "rating": 6,
+          "text": "The actors were fine, but I preferred the Birdman-style drum score. That stayed with me afterward.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900163,
+          "rating": 8,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900164,
+          "rating": 5,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-034",
+      "topic": "zimmer",
+      "style": "mixed_low_rating",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 4,
+      "reviews": [
+        {
+          "item_id": 900165,
+          "rating": 3,
+          "text": "I disliked the story, but I loved Hans Zimmer's score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900166,
+          "rating": 2,
+          "text": "This was boring, but Hans Zimmer's score was great.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900167,
+          "rating": 1,
+          "text": "I hated the ending. I enjoyed Hans Zimmer's score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900168,
+          "rating": 3,
+          "text": "The acting left me cold, but I liked Hans Zimmer's score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900169,
+          "rating": 2,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-035",
+      "topic": "anderson",
+      "style": "mixed_low_rating",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 5,
+      "reviews": [
+        {
+          "item_id": 900170,
+          "rating": 2,
+          "text": "I disliked the story, but I loved the Wes Anderson aesthetic.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900171,
+          "rating": 3,
+          "text": "This was boring, but the Wes Anderson aesthetic was great.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900172,
+          "rating": 2,
+          "text": "I hated the ending. I enjoyed the Wes Anderson aesthetic.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900173,
+          "rating": 1,
+          "text": "The acting left me cold, but I liked the Wes Anderson aesthetic.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900174,
+          "rating": 3,
+          "text": "I would not recommend the film overall. I am a fan of the Wes Anderson aesthetic, though.",
+          "expected_direction": 1
+        }
+      ]
+    },
+    {
+      "id": "synthetic-036",
+      "topic": "birdman",
+      "style": "mixed_low_rating",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 1,
+      "reviews": [
+        {
+          "item_id": 900175,
+          "rating": 4,
+          "text": "I disliked the story, but I loved the Birdman-style drum score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900176,
+          "rating": 1,
+          "text": "The central friendship worked for me.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900177,
+          "rating": 1,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900178,
+          "rating": 3,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900179,
+          "rating": 3,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-037",
+      "topic": "zimmer",
+      "style": "negative",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 2,
+      "reviews": [
+        {
+          "item_id": 900180,
+          "rating": 6,
+          "text": "I hated Hans Zimmer's score.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900181,
+          "rating": 5,
+          "text": "I liked the story, but Hans Zimmer's score was distracting.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900182,
+          "rating": 6,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900183,
+          "rating": 9,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900184,
+          "rating": 5,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-038",
+      "topic": "anderson",
+      "style": "negative",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 3,
+      "reviews": [
+        {
+          "item_id": 900185,
+          "rating": 5,
+          "text": "I hated the Wes Anderson aesthetic.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900186,
+          "rating": 10,
+          "text": "I liked the story, but the Wes Anderson aesthetic was distracting.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900187,
+          "rating": 8,
+          "text": "I am not a fan of the Wes Anderson aesthetic.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900188,
+          "rating": 5,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900189,
+          "rating": 9,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-039",
+      "topic": "birdman",
+      "style": "negative",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 4,
+      "reviews": [
+        {
+          "item_id": 900190,
+          "rating": 6,
+          "text": "I hated the Birdman-style drum score.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900191,
+          "rating": 6,
+          "text": "I liked the story, but the Birdman-style drum score was distracting.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900192,
+          "rating": 10,
+          "text": "I am not a fan of the Birdman-style drum score.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900193,
+          "rating": 8,
+          "text": "I did not enjoy the Birdman-style drum score.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900194,
+          "rating": 9,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-040",
+      "topic": "zimmer",
+      "style": "factual",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 5,
+      "reviews": [
+        {
+          "item_id": 900195,
+          "rating": 6,
+          "text": "The credits list Hans Zimmer. The ending was good.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900196,
+          "rating": 7,
+          "text": "Someone mentioned Hans Zimmer. I liked the acting.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900197,
+          "rating": 9,
+          "text": "Hans Zimmer's score comes up in the discussion of this film.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900198,
+          "rating": 9,
+          "text": "A friend mentioned Hans Zimmer before we watched it.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900199,
+          "rating": 8,
+          "text": "The review I read mentioned Hans Zimmer's score.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-041",
+      "topic": "anderson",
+      "style": "factual",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 1,
+      "reviews": [
+        {
+          "item_id": 900200,
+          "rating": 6,
+          "text": "The credits list Wes Anderson. The ending was good.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900201,
+          "rating": 9,
+          "text": "The central friendship worked for me.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900202,
+          "rating": 10,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900203,
+          "rating": 10,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900204,
+          "rating": 6,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-042",
+      "topic": "birdman",
+      "style": "factual",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 2,
+      "reviews": [
+        {
+          "item_id": 900205,
+          "rating": 10,
+          "text": "The credits list Birdman. The ending was good.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900206,
+          "rating": 7,
+          "text": "Someone mentioned Birdman. I liked the acting.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900207,
+          "rating": 8,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900208,
+          "rating": 10,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900209,
+          "rating": 10,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-043",
+      "topic": "zimmer",
+      "style": "sarcastic",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 3,
+      "reviews": [
+        {
+          "item_id": 900210,
+          "rating": 7,
+          "text": "Oh great, more Hanz Zimmer's score. Exactly what I did not need.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900211,
+          "rating": 8,
+          "text": "Amazing, another round of Hanz Zimmer's score. Spare me.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900212,
+          "rating": 9,
+          "text": "Just what I wanted: Hanz Zimmer's score, again.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900213,
+          "rating": 8,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900214,
+          "rating": 5,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-044",
+      "topic": "anderson",
+      "style": "sarcastic",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 4,
+      "reviews": [
+        {
+          "item_id": 900215,
+          "rating": 6,
+          "text": "Oh great, more the Wes Anderson aesthetic. Exactly what I did not need.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900216,
+          "rating": 6,
+          "text": "Amazing, another round of the Wes Anderson aesthetic. Spare me.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900217,
+          "rating": 5,
+          "text": "Just what I wanted: the Wes Anderson aesthetic, again.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900218,
+          "rating": 7,
+          "text": "Great, the Wes Anderson aesthetic. What a surprise.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900219,
+          "rating": 5,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-045",
+      "topic": "birdman",
+      "style": "sarcastic",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 5,
+      "reviews": [
+        {
+          "item_id": 900220,
+          "rating": 9,
+          "text": "Oh great, more the Birdman-style drum score. Exactly what I did not need.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900221,
+          "rating": 9,
+          "text": "Amazing, another round of the Birdman-style drum score. Spare me.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900222,
+          "rating": 6,
+          "text": "Just what I wanted: the Birdman-style drum score, again.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900223,
+          "rating": 9,
+          "text": "Great, the Birdman-style drum score. What a surprise.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900224,
+          "rating": 6,
+          "text": "Love that we got more the Birdman-style drum score. Said absolutely nobody in my house.",
+          "expected_direction": -1
+        }
+      ]
+    },
+    {
+      "id": "synthetic-046",
+      "topic": "zimmer",
+      "style": "implicit",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 1,
+      "reviews": [
+        {
+          "item_id": 900225,
+          "rating": 5,
+          "text": "The swelling score was my favorite part, especially the Zimmer cues.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900226,
+          "rating": 5,
+          "text": "The central friendship worked for me.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900227,
+          "rating": 10,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900228,
+          "rating": 10,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900229,
+          "rating": 5,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-047",
+      "topic": "anderson",
+      "style": "implicit",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 2,
+      "reviews": [
+        {
+          "item_id": 900230,
+          "rating": 6,
+          "text": "Pastel corridors, dead-center frames, dollhouse sets. That is my kind of thing.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900231,
+          "rating": 5,
+          "text": "Pastel corridors, dead-center frames, dollhouse sets. That is my kind of thing. The plot was a different story.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900232,
+          "rating": 5,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900233,
+          "rating": 7,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900234,
+          "rating": 5,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-048",
+      "topic": "birdman",
+      "style": "implicit",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 3,
+      "reviews": [
+        {
+          "item_id": 900235,
+          "rating": 9,
+          "text": "Loose jazz percussion, all skittering rhythms and restless energy. More of that, please.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900236,
+          "rating": 6,
+          "text": "Loose jazz percussion, all skittering rhythms and restless energy. More of that, please. The plot was a different story.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900237,
+          "rating": 7,
+          "text": "Loose jazz percussion, all skittering rhythms and restless energy. More of that, please. I could have done without the ending.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900238,
+          "rating": 10,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900239,
+          "rating": 8,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-049",
+      "topic": "zimmer",
+      "style": "brief",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 4,
+      "reviews": [
+        {
+          "item_id": 900240,
+          "rating": 6,
+          "text": "I love Hans Zimmer's score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900241,
+          "rating": 9,
+          "text": "I enjoyed Hans Zimmer's score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900242,
+          "rating": 6,
+          "text": "Really liked Hans Zimmer's score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900243,
+          "rating": 10,
+          "text": "Hans Zimmer's score was great.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900244,
+          "rating": 9,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-050",
+      "topic": "anderson",
+      "style": "brief",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 5,
+      "reviews": [
+        {
+          "item_id": 900245,
+          "rating": 9,
+          "text": "I love the Wes Andersson aesthetic.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900246,
+          "rating": 8,
+          "text": "I enjoyed the Wes Andersson aesthetic.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900247,
+          "rating": 6,
+          "text": "Really liked the Wes Andersson aesthetic.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900248,
+          "rating": 8,
+          "text": "the Wes Andersson aesthetic was great.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900249,
+          "rating": 8,
+          "text": "I am a fan of the Wes Andersson aesthetic.",
+          "expected_direction": 1
+        }
+      ]
+    },
+    {
+      "id": "synthetic-051",
+      "topic": "birdman",
+      "style": "brief",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 1,
+      "reviews": [
+        {
+          "item_id": 900250,
+          "rating": 6,
+          "text": "I love the Birdman-style drum score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900251,
+          "rating": 5,
+          "text": "The central friendship worked for me.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900252,
+          "rating": 5,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900253,
+          "rating": 10,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900254,
+          "rating": 8,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-052",
+      "topic": "zimmer",
+      "style": "chatty",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 2,
+      "reviews": [
+        {
+          "item_id": 900255,
+          "rating": 7,
+          "text": "Okay, I loved Hans Zimmer's score. The plot lost me a little, though.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900256,
+          "rating": 8,
+          "text": "Honestly, Hans Zimmer's score is what I liked most.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900257,
+          "rating": 8,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900258,
+          "rating": 8,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900259,
+          "rating": 10,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-053",
+      "topic": "anderson",
+      "style": "chatty",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 3,
+      "reviews": [
+        {
+          "item_id": 900260,
+          "rating": 5,
+          "text": "Okay, I loved the Wes Anderson aesthetic. The plot lost me a little, though.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900261,
+          "rating": 10,
+          "text": "Honestly, the Wes Anderson aesthetic is what I liked most.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900262,
+          "rating": 10,
+          "text": "I would watch it again for the Wes Anderson aesthetic. I loved it.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900263,
+          "rating": 10,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900264,
+          "rating": 5,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-054",
+      "topic": "birdman",
+      "style": "chatty",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 4,
+      "reviews": [
+        {
+          "item_id": 900265,
+          "rating": 5,
+          "text": "Okay, I loved the Birdman-style drum score. The plot lost me a little, though.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900266,
+          "rating": 8,
+          "text": "Honestly, the Birdman-style drum score is what I liked most.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900267,
+          "rating": 10,
+          "text": "I would watch it again for the Birdman-style drum score. I loved it.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900268,
+          "rating": 7,
+          "text": "I liked the Birdman-style drum score way more than I expected.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900269,
+          "rating": 5,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-055",
+      "topic": "zimmer",
+      "style": "detailed",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 5,
+      "reviews": [
+        {
+          "item_id": 900270,
+          "rating": 6,
+          "text": "I enjoyed Hans Zimmer's score because it gave the scenes a shape the dialogue never quite found.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900271,
+          "rating": 6,
+          "text": "I loved Hans Zimmer's score. It held my attention even when the middle section dragged.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900272,
+          "rating": 6,
+          "text": "The actors were fine, but I preferred Hans Zimmer's score. That stayed with me afterward.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900273,
+          "rating": 9,
+          "text": "I liked the story, and I loved Hans Zimmer's score. The two worked together for me.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900274,
+          "rating": 8,
+          "text": "I am a fan of Hans Zimmer's score; that was a stronger reason to return than the plot.",
+          "expected_direction": 1
+        }
+      ]
+    },
+    {
+      "id": "synthetic-056",
+      "topic": "anderson",
+      "style": "detailed",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 1,
+      "reviews": [
+        {
+          "item_id": 900275,
+          "rating": 6,
+          "text": "I enjoyed the Wes Anderson aesthetic because it gave the scenes a shape the dialogue never quite found.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900276,
+          "rating": 8,
+          "text": "The central friendship worked for me.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900277,
+          "rating": 6,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900278,
+          "rating": 7,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900279,
+          "rating": 8,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-057",
+      "topic": "birdman",
+      "style": "detailed",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 2,
+      "reviews": [
+        {
+          "item_id": 900280,
+          "rating": 6,
+          "text": "I enjoyed the Birdman-style drum score because it gave the scenes a shape the dialogue never quite found.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900281,
+          "rating": 5,
+          "text": "I loved the Birdman-style drum score. It held my attention even when the middle section dragged.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900282,
+          "rating": 8,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900283,
+          "rating": 9,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900284,
+          "rating": 5,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-058",
+      "topic": "zimmer",
+      "style": "mixed_low_rating",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 3,
+      "reviews": [
+        {
+          "item_id": 900285,
+          "rating": 1,
+          "text": "I disliked the story, but I loved Hans Zimmer's score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900286,
+          "rating": 1,
+          "text": "This was boring, but Hans Zimmer's score was great.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900287,
+          "rating": 1,
+          "text": "I hated the ending. I enjoyed Hans Zimmer's score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900288,
+          "rating": 2,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900289,
+          "rating": 2,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-059",
+      "topic": "anderson",
+      "style": "mixed_low_rating",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 4,
+      "reviews": [
+        {
+          "item_id": 900290,
+          "rating": 4,
+          "text": "I disliked the story, but I loved the Wes Anderson aesthetic.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900291,
+          "rating": 4,
+          "text": "This was boring, but the Wes Anderson aesthetic was great.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900292,
+          "rating": 4,
+          "text": "I hated the ending. I enjoyed the Wes Anderson aesthetic.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900293,
+          "rating": 2,
+          "text": "The acting left me cold, but I liked the Wes Anderson aesthetic.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900294,
+          "rating": 4,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-060",
+      "topic": "birdman",
+      "style": "mixed_low_rating",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 5,
+      "reviews": [
+        {
+          "item_id": 900295,
+          "rating": 1,
+          "text": "I disliked the story, but I loved the Birdman-style drum score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900296,
+          "rating": 2,
+          "text": "This was boring, but the Birdman-style drum score was great.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900297,
+          "rating": 4,
+          "text": "I hated the ending. I enjoyed the Birdman-style drum score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900298,
+          "rating": 1,
+          "text": "The acting left me cold, but I liked the Birdman-style drum score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900299,
+          "rating": 4,
+          "text": "I would not recommend the film overall. I am a fan of the Birdman-style drum score, though.",
+          "expected_direction": 1
+        }
+      ]
+    },
+    {
+      "id": "synthetic-061",
+      "topic": "zimmer",
+      "style": "negative",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 1,
+      "reviews": [
+        {
+          "item_id": 900300,
+          "rating": 7,
+          "text": "I hated Hans Zimmer's score.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900301,
+          "rating": 8,
+          "text": "The central friendship worked for me.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900302,
+          "rating": 7,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900303,
+          "rating": 8,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900304,
+          "rating": 10,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-062",
+      "topic": "anderson",
+      "style": "negative",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 2,
+      "reviews": [
+        {
+          "item_id": 900305,
+          "rating": 10,
+          "text": "I hated the Wes Anderson aesthetic.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900306,
+          "rating": 9,
+          "text": "I liked the story, but the Wes Anderson aesthetic was distracting.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900307,
+          "rating": 10,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900308,
+          "rating": 10,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900309,
+          "rating": 8,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-063",
+      "topic": "birdman",
+      "style": "negative",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 3,
+      "reviews": [
+        {
+          "item_id": 900310,
+          "rating": 6,
+          "text": "I hated the Birdman-style drum score.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900311,
+          "rating": 6,
+          "text": "I liked the story, but the Birdman-style drum score was distracting.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900312,
+          "rating": 7,
+          "text": "I am not a fan of the Birdman-style drum score.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900313,
+          "rating": 6,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900314,
+          "rating": 5,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-064",
+      "topic": "zimmer",
+      "style": "factual",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 4,
+      "reviews": [
+        {
+          "item_id": 900315,
+          "rating": 9,
+          "text": "The credits list Hanz Zimmer. The ending was good.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900316,
+          "rating": 10,
+          "text": "Someone mentioned Hanz Zimmer. I liked the acting.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900317,
+          "rating": 9,
+          "text": "Hanz Zimmer's score comes up in the discussion of this film.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900318,
+          "rating": 5,
+          "text": "A friend mentioned Hanz Zimmer before we watched it.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900319,
+          "rating": 10,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-065",
+      "topic": "anderson",
+      "style": "factual",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 5,
+      "reviews": [
+        {
+          "item_id": 900320,
+          "rating": 7,
+          "text": "The credits list Wes Anderson. The ending was good.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900321,
+          "rating": 5,
+          "text": "Someone mentioned Wes Anderson. I liked the acting.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900322,
+          "rating": 5,
+          "text": "the Wes Anderson aesthetic comes up in the discussion of this film.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900323,
+          "rating": 9,
+          "text": "A friend mentioned Wes Anderson before we watched it.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900324,
+          "rating": 8,
+          "text": "The review I read mentioned the Wes Anderson aesthetic.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-066",
+      "topic": "birdman",
+      "style": "factual",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 1,
+      "reviews": [
+        {
+          "item_id": 900325,
+          "rating": 9,
+          "text": "The credits list Birdman. The ending was good.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900326,
+          "rating": 9,
+          "text": "The central friendship worked for me.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900327,
+          "rating": 6,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900328,
+          "rating": 5,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900329,
+          "rating": 9,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-067",
+      "topic": "zimmer",
+      "style": "sarcastic",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 2,
+      "reviews": [
+        {
+          "item_id": 900330,
+          "rating": 5,
+          "text": "Oh great, more Hans Zimmer's score. Exactly what I did not need.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900331,
+          "rating": 6,
+          "text": "Amazing, another round of Hans Zimmer's score. Spare me.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900332,
+          "rating": 5,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900333,
+          "rating": 9,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900334,
+          "rating": 5,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-068",
+      "topic": "anderson",
+      "style": "sarcastic",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 3,
+      "reviews": [
+        {
+          "item_id": 900335,
+          "rating": 10,
+          "text": "Oh great, more the Wes Anderson aesthetic. Exactly what I did not need.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900336,
+          "rating": 6,
+          "text": "Amazing, another round of the Wes Anderson aesthetic. Spare me.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900337,
+          "rating": 8,
+          "text": "Just what I wanted: the Wes Anderson aesthetic, again.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900338,
+          "rating": 5,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900339,
+          "rating": 9,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-069",
+      "topic": "birdman",
+      "style": "sarcastic",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 4,
+      "reviews": [
+        {
+          "item_id": 900340,
+          "rating": 6,
+          "text": "Oh great, more the Birdman-style drum score. Exactly what I did not need.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900341,
+          "rating": 9,
+          "text": "Amazing, another round of the Birdman-style drum score. Spare me.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900342,
+          "rating": 9,
+          "text": "Just what I wanted: the Birdman-style drum score, again.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900343,
+          "rating": 5,
+          "text": "Great, the Birdman-style drum score. What a surprise.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900344,
+          "rating": 9,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-070",
+      "topic": "zimmer",
+      "style": "implicit",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 5,
+      "reviews": [
+        {
+          "item_id": 900345,
+          "rating": 5,
+          "text": "The swelling score was my favorite part, especially the Zimmer cues.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900346,
+          "rating": 8,
+          "text": "The swelling score was my favorite part, especially the Zimmer cues. The plot was a different story.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900347,
+          "rating": 10,
+          "text": "The swelling score was my favorite part, especially the Zimmer cues. I could have done without the ending.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900348,
+          "rating": 9,
+          "text": "The swelling score was my favorite part, especially the Zimmer cues. That part stayed with me.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900349,
+          "rating": 9,
+          "text": "The swelling score was my favorite part, especially the Zimmer cues. The dialogue, less so.",
+          "expected_direction": 1
+        }
+      ]
+    },
+    {
+      "id": "synthetic-071",
+      "topic": "anderson",
+      "style": "implicit",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 1,
+      "reviews": [
+        {
+          "item_id": 900350,
+          "rating": 9,
+          "text": "Pastel corridors, dead-center frames, dollhouse sets. That is my kind of thing.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900351,
+          "rating": 7,
+          "text": "The central friendship worked for me.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900352,
+          "rating": 7,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900353,
+          "rating": 6,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900354,
+          "rating": 10,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-072",
+      "topic": "birdman",
+      "style": "implicit",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 2,
+      "reviews": [
+        {
+          "item_id": 900355,
+          "rating": 10,
+          "text": "Loose jazz percussion, all skittering rhythms and restless energy. More of that, please.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900356,
+          "rating": 7,
+          "text": "Loose jazz percussion, all skittering rhythms and restless energy. More of that, please. The plot was a different story.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900357,
+          "rating": 6,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900358,
+          "rating": 7,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900359,
+          "rating": 8,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-073",
+      "topic": "zimmer",
+      "style": "brief",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 3,
+      "reviews": [
+        {
+          "item_id": 900360,
+          "rating": 6,
+          "text": "I love Hans Zimmer's score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900361,
+          "rating": 10,
+          "text": "I enjoyed Hans Zimmer's score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900362,
+          "rating": 10,
+          "text": "Really liked Hans Zimmer's score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900363,
+          "rating": 7,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900364,
+          "rating": 8,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-074",
+      "topic": "anderson",
+      "style": "brief",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 4,
+      "reviews": [
+        {
+          "item_id": 900365,
+          "rating": 7,
+          "text": "I love the Wes Anderson aesthetic.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900366,
+          "rating": 5,
+          "text": "I enjoyed the Wes Anderson aesthetic.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900367,
+          "rating": 5,
+          "text": "Really liked the Wes Anderson aesthetic.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900368,
+          "rating": 8,
+          "text": "the Wes Anderson aesthetic was great.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900369,
+          "rating": 9,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-075",
+      "topic": "birdman",
+      "style": "brief",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 5,
+      "reviews": [
+        {
+          "item_id": 900370,
+          "rating": 9,
+          "text": "I love the Birdman-style drum score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900371,
+          "rating": 5,
+          "text": "I enjoyed the Birdman-style drum score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900372,
+          "rating": 5,
+          "text": "Really liked the Birdman-style drum score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900373,
+          "rating": 9,
+          "text": "the Birdman-style drum score was great.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900374,
+          "rating": 6,
+          "text": "I am a fan of the Birdman-style drum score.",
+          "expected_direction": 1
+        }
+      ]
+    },
+    {
+      "id": "synthetic-076",
+      "topic": "zimmer",
+      "style": "chatty",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 1,
+      "reviews": [
+        {
+          "item_id": 900375,
+          "rating": 9,
+          "text": "Okay, I loved Hans Zimmer's score. The plot lost me a little, though.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900376,
+          "rating": 7,
+          "text": "The central friendship worked for me.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900377,
+          "rating": 6,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900378,
+          "rating": 7,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900379,
+          "rating": 5,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-077",
+      "topic": "anderson",
+      "style": "chatty",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 2,
+      "reviews": [
+        {
+          "item_id": 900380,
+          "rating": 6,
+          "text": "Okay, I loved the Wes Anderson aesthetic. The plot lost me a little, though.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900381,
+          "rating": 7,
+          "text": "Honestly, the Wes Anderson aesthetic is what I liked most.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900382,
+          "rating": 7,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900383,
+          "rating": 6,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900384,
+          "rating": 8,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-078",
+      "topic": "birdman",
+      "style": "chatty",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 3,
+      "reviews": [
+        {
+          "item_id": 900385,
+          "rating": 9,
+          "text": "Okay, I loved the Birdman-style drum score. The plot lost me a little, though.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900386,
+          "rating": 10,
+          "text": "Honestly, the Birdman-style drum score is what I liked most.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900387,
+          "rating": 7,
+          "text": "I would watch it again for the Birdman-style drum score. I loved it.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900388,
+          "rating": 9,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900389,
+          "rating": 10,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-079",
+      "topic": "zimmer",
+      "style": "detailed",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 4,
+      "reviews": [
+        {
+          "item_id": 900390,
+          "rating": 9,
+          "text": "I enjoyed Hans Zimmer's score because it gave the scenes a shape the dialogue never quite found.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900391,
+          "rating": 5,
+          "text": "I loved Hans Zimmer's score. It held my attention even when the middle section dragged.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900392,
+          "rating": 10,
+          "text": "The actors were fine, but I preferred Hans Zimmer's score. That stayed with me afterward.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900393,
+          "rating": 9,
+          "text": "I liked the story, and I loved Hans Zimmer's score. The two worked together for me.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900394,
+          "rating": 7,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-080",
+      "topic": "anderson",
+      "style": "detailed",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 5,
+      "reviews": [
+        {
+          "item_id": 900395,
+          "rating": 10,
+          "text": "I enjoyed the Wes Anderson aesthetic because it gave the scenes a shape the dialogue never quite found.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900396,
+          "rating": 5,
+          "text": "I loved the Wes Anderson aesthetic. It held my attention even when the middle section dragged.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900397,
+          "rating": 6,
+          "text": "The actors were fine, but I preferred the Wes Anderson aesthetic. That stayed with me afterward.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900398,
+          "rating": 7,
+          "text": "I liked the story, and I loved the Wes Anderson aesthetic. The two worked together for me.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900399,
+          "rating": 5,
+          "text": "I am a fan of the Wes Anderson aesthetic; that was a stronger reason to return than the plot.",
+          "expected_direction": 1
+        }
+      ]
+    },
+    {
+      "id": "synthetic-081",
+      "topic": "birdman",
+      "style": "detailed",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 1,
+      "reviews": [
+        {
+          "item_id": 900400,
+          "rating": 5,
+          "text": "I enjoyed the Birdman-style drum score because it gave the scenes a shape the dialogue never quite found.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900401,
+          "rating": 10,
+          "text": "The central friendship worked for me.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900402,
+          "rating": 9,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900403,
+          "rating": 6,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900404,
+          "rating": 7,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-082",
+      "topic": "zimmer",
+      "style": "mixed_low_rating",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 2,
+      "reviews": [
+        {
+          "item_id": 900405,
+          "rating": 3,
+          "text": "I disliked the story, but I loved Hans Zimmer's score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900406,
+          "rating": 2,
+          "text": "This was boring, but Hans Zimmer's score was great.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900407,
+          "rating": 3,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900408,
+          "rating": 2,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900409,
+          "rating": 3,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-083",
+      "topic": "anderson",
+      "style": "mixed_low_rating",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 3,
+      "reviews": [
+        {
+          "item_id": 900410,
+          "rating": 4,
+          "text": "I disliked the story, but I loved the Wes Anderson aesthetic.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900411,
+          "rating": 3,
+          "text": "This was boring, but the Wes Anderson aesthetic was great.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900412,
+          "rating": 1,
+          "text": "I hated the ending. I enjoyed the Wes Anderson aesthetic.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900413,
+          "rating": 1,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900414,
+          "rating": 4,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-084",
+      "topic": "birdman",
+      "style": "mixed_low_rating",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 4,
+      "reviews": [
+        {
+          "item_id": 900415,
+          "rating": 3,
+          "text": "I disliked the story, but I loved the Birdman-style drum score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900416,
+          "rating": 1,
+          "text": "This was boring, but the Birdman-style drum score was great.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900417,
+          "rating": 1,
+          "text": "I hated the ending. I enjoyed the Birdman-style drum score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900418,
+          "rating": 3,
+          "text": "The acting left me cold, but I liked the Birdman-style drum score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900419,
+          "rating": 2,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-085",
+      "topic": "zimmer",
+      "style": "negative",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 5,
+      "reviews": [
+        {
+          "item_id": 900420,
+          "rating": 10,
+          "text": "I hated Hanz Zimmer's score.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900421,
+          "rating": 7,
+          "text": "I liked the story, but Hanz Zimmer's score was distracting.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900422,
+          "rating": 6,
+          "text": "I am not a fan of Hanz Zimmer's score.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900423,
+          "rating": 10,
+          "text": "I did not enjoy Hanz Zimmer's score.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900424,
+          "rating": 8,
+          "text": "I did not love Hanz Zimmer's score. The cast was great.",
+          "expected_direction": -1
+        }
+      ]
+    },
+    {
+      "id": "synthetic-086",
+      "topic": "anderson",
+      "style": "negative",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 1,
+      "reviews": [
+        {
+          "item_id": 900425,
+          "rating": 9,
+          "text": "I hated the Wes Anderson aesthetic.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900426,
+          "rating": 10,
+          "text": "The central friendship worked for me.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900427,
+          "rating": 8,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900428,
+          "rating": 9,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900429,
+          "rating": 5,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-087",
+      "topic": "birdman",
+      "style": "negative",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 2,
+      "reviews": [
+        {
+          "item_id": 900430,
+          "rating": 5,
+          "text": "I hated the Birdman-style drum score.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900431,
+          "rating": 5,
+          "text": "I liked the story, but the Birdman-style drum score was distracting.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900432,
+          "rating": 10,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900433,
+          "rating": 6,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900434,
+          "rating": 9,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-088",
+      "topic": "zimmer",
+      "style": "factual",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 3,
+      "reviews": [
+        {
+          "item_id": 900435,
+          "rating": 5,
+          "text": "The credits list Hans Zimmer. The ending was good.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900436,
+          "rating": 7,
+          "text": "Someone mentioned Hans Zimmer. I liked the acting.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900437,
+          "rating": 9,
+          "text": "Hans Zimmer's score comes up in the discussion of this film.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900438,
+          "rating": 9,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900439,
+          "rating": 6,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-089",
+      "topic": "anderson",
+      "style": "factual",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 4,
+      "reviews": [
+        {
+          "item_id": 900440,
+          "rating": 8,
+          "text": "The credits list Wes Anderson. The ending was good.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900441,
+          "rating": 6,
+          "text": "Someone mentioned Wes Anderson. I liked the acting.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900442,
+          "rating": 5,
+          "text": "the Wes Anderson aesthetic comes up in the discussion of this film.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900443,
+          "rating": 7,
+          "text": "A friend mentioned Wes Anderson before we watched it.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900444,
+          "rating": 7,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-090",
+      "topic": "birdman",
+      "style": "factual",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 5,
+      "reviews": [
+        {
+          "item_id": 900445,
+          "rating": 5,
+          "text": "The credits list Birdman. The ending was good.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900446,
+          "rating": 7,
+          "text": "Someone mentioned Birdman. I liked the acting.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900447,
+          "rating": 6,
+          "text": "the Birdman-style drum score comes up in the discussion of this film.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900448,
+          "rating": 10,
+          "text": "A friend mentioned Birdman before we watched it.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900449,
+          "rating": 6,
+          "text": "The review I read mentioned the Birdman-style drum score.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-091",
+      "topic": "zimmer",
+      "style": "sarcastic",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 1,
+      "reviews": [
+        {
+          "item_id": 900450,
+          "rating": 10,
+          "text": "Oh great, more Hans Zimmer's score. Exactly what I did not need.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900451,
+          "rating": 5,
+          "text": "The central friendship worked for me.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900452,
+          "rating": 7,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900453,
+          "rating": 9,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900454,
+          "rating": 8,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-092",
+      "topic": "anderson",
+      "style": "sarcastic",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 2,
+      "reviews": [
+        {
+          "item_id": 900455,
+          "rating": 9,
+          "text": "Oh great, more the Wes Andersson aesthetic. Exactly what I did not need.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900456,
+          "rating": 10,
+          "text": "Amazing, another round of the Wes Andersson aesthetic. Spare me.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900457,
+          "rating": 6,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900458,
+          "rating": 6,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900459,
+          "rating": 6,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-093",
+      "topic": "birdman",
+      "style": "sarcastic",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 3,
+      "reviews": [
+        {
+          "item_id": 900460,
+          "rating": 6,
+          "text": "Oh great, more the Birdman-style drum score. Exactly what I did not need.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900461,
+          "rating": 8,
+          "text": "Amazing, another round of the Birdman-style drum score. Spare me.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900462,
+          "rating": 5,
+          "text": "Just what I wanted: the Birdman-style drum score, again.",
+          "expected_direction": -1
+        },
+        {
+          "item_id": 900463,
+          "rating": 6,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900464,
+          "rating": 10,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-094",
+      "topic": "zimmer",
+      "style": "implicit",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 4,
+      "reviews": [
+        {
+          "item_id": 900465,
+          "rating": 7,
+          "text": "The swelling score was my favorite part, especially the Zimmer cues.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900466,
+          "rating": 8,
+          "text": "The swelling score was my favorite part, especially the Zimmer cues. The plot was a different story.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900467,
+          "rating": 10,
+          "text": "The swelling score was my favorite part, especially the Zimmer cues. I could have done without the ending.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900468,
+          "rating": 10,
+          "text": "The swelling score was my favorite part, especially the Zimmer cues. That part stayed with me.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900469,
+          "rating": 6,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-095",
+      "topic": "anderson",
+      "style": "implicit",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 5,
+      "reviews": [
+        {
+          "item_id": 900470,
+          "rating": 7,
+          "text": "Pastel corridors, dead-center frames, dollhouse sets. That is my kind of thing.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900471,
+          "rating": 6,
+          "text": "Pastel corridors, dead-center frames, dollhouse sets. That is my kind of thing. The plot was a different story.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900472,
+          "rating": 10,
+          "text": "Pastel corridors, dead-center frames, dollhouse sets. That is my kind of thing. I could have done without the ending.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900473,
+          "rating": 5,
+          "text": "Pastel corridors, dead-center frames, dollhouse sets. That is my kind of thing. That part stayed with me.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900474,
+          "rating": 8,
+          "text": "Pastel corridors, dead-center frames, dollhouse sets. That is my kind of thing. The dialogue, less so.",
+          "expected_direction": 1
+        }
+      ]
+    },
+    {
+      "id": "synthetic-096",
+      "topic": "birdman",
+      "style": "implicit",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 1,
+      "reviews": [
+        {
+          "item_id": 900475,
+          "rating": 5,
+          "text": "Loose jazz percussion, all skittering rhythms and restless energy. More of that, please.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900476,
+          "rating": 8,
+          "text": "The central friendship worked for me.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900477,
+          "rating": 6,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900478,
+          "rating": 6,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900479,
+          "rating": 8,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-097",
+      "topic": "zimmer",
+      "style": "brief",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 2,
+      "reviews": [
+        {
+          "item_id": 900480,
+          "rating": 7,
+          "text": "I love Hans Zimmer's score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900481,
+          "rating": 7,
+          "text": "I enjoyed Hans Zimmer's score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900482,
+          "rating": 6,
+          "text": "The plot took its time getting anywhere.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900483,
+          "rating": 6,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900484,
+          "rating": 5,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-098",
+      "topic": "anderson",
+      "style": "brief",
+      "expected_feature": "visual:pastel palette",
+      "repeated_movies": 3,
+      "reviews": [
+        {
+          "item_id": 900485,
+          "rating": 10,
+          "text": "I love the Wes Anderson aesthetic.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900486,
+          "rating": 6,
+          "text": "I enjoyed the Wes Anderson aesthetic.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900487,
+          "rating": 8,
+          "text": "Really liked the Wes Anderson aesthetic.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900488,
+          "rating": 7,
+          "text": "I would have cut twenty minutes.",
+          "expected_direction": 0
+        },
+        {
+          "item_id": 900489,
+          "rating": 7,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-099",
+      "topic": "birdman",
+      "style": "brief",
+      "expected_feature": "music:jazz percussion",
+      "repeated_movies": 4,
+      "reviews": [
+        {
+          "item_id": 900490,
+          "rating": 5,
+          "text": "I love the Birdman-style drum score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900491,
+          "rating": 7,
+          "text": "I enjoyed the Birdman-style drum score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900492,
+          "rating": 7,
+          "text": "Really liked the Birdman-style drum score.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900493,
+          "rating": 10,
+          "text": "the Birdman-style drum score was great.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900494,
+          "rating": 9,
+          "text": "Funny in places, uneven in others.",
+          "expected_direction": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-100",
+      "topic": "zimmer",
+      "style": "chatty",
+      "expected_feature": "composer:hans zimmer",
+      "repeated_movies": 5,
+      "reviews": [
+        {
+          "item_id": 900495,
+          "rating": 8,
+          "text": "Okay, I loved Hans Zimmer's score. The plot lost me a little, though.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900496,
+          "rating": 10,
+          "text": "Honestly, Hans Zimmer's score is what I liked most.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900497,
+          "rating": 9,
+          "text": "I would watch it again for Hans Zimmer's score. I loved it.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900498,
+          "rating": 7,
+          "text": "I liked Hans Zimmer's score way more than I expected.",
+          "expected_direction": 1
+        },
+        {
+          "item_id": 900499,
+          "rating": 5,
+          "text": "The ending was a mess, but I loved Hans Zimmer's score.",
+          "expected_direction": 1
+        }
+      ]
+    }
+  ]
+}

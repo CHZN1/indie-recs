@@ -1,0 +1,37 @@
+services:
+  api:
+    image: indie-recs:local
+    build: .
+    env_file: .env
+    environment: &production
+      ENVIRONMENT: production
+      AUTH_REQUIRED: 'true'
+      BACKGROUND_TRAINING: 'true'
+      DATABASE_URL: sqlite:////app/data/indie_recs.db
+      MODEL_PATH: /app/models/svd_model.joblib
+    ports:
+      - '127.0.0.1:8080:8000'
+    volumes:
+      - database:/app/data
+      - models:/app/models
+    restart: unless-stopped
+    healthcheck:
+      test: ['CMD', 'python', '-c', "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3)"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+  worker:
+    image: indie-recs:local
+    env_file: .env
+    environment: *production
+    command: ['python', 'scripts/training_worker.py', '--poll-seconds', '2']
+    volumes:
+      - database:/app/data
+      - models:/app/models
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+volumes:
+  database:
+  models:

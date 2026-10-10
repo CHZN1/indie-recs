@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import logging
+import math
+from datetime import datetime
 import time
 from io import BytesIO
 from typing import BinaryIO
@@ -9,7 +11,7 @@ import pandas as pd
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.models import Movie, Rating, User
+from app.models import Movie, Rating, User, Review
 from app.tmdb import get_movie_bundle, search_movie
 
 logger = logging.getLogger(__name__)
@@ -38,6 +40,18 @@ def _year_value(raw) -> int | None:
         return None
 
 
+def _tmdb_id(raw) -> int | None:
+    if pd.isna(raw) or str(raw).strip() == '':
+        return None
+    try:
+        value = float(raw)
+        if not value.is_integer() or not 0 < value <= 1_000_000_000:
+            raise ValueError
+        return int(value)
+    except (ValueError, TypeError, OverflowError):
+        raise ValueError("TMDB ID must be a positive integer or blank.") from None
+
+
 def _rating_value(raw) -> float | None:
     if pd.isna(raw) or raw == "":
         return None
@@ -45,7 +59,7 @@ def _rating_value(raw) -> float | None:
         value = float(raw)
     except (TypeError, ValueError):
         return None
-    if value < 0 or value > 10:
+    if not math.isfinite(value) or value < 0 or value > 10:
         return None
     return value
 
@@ -115,32 +129,38 @@ def _get_or_create_movie(
 def import_letterboxd_csv(db: Session, source: BinaryIO | bytes | str) -> ImportResult:
     started = time.perf_counter()
     df = parse_letterboxd_csv(source)
+    if "TMDB ID" in df.columns:
+        for raw_id in df["TMDB ID"]:
+            _tmdb_id(raw_id)
+    if 'Review' in df.columns:
+        if any(not pd.isna(value) and len(str(value))>20000 for value in df['Review']):
+            raise ValueError('Review text exceeds 20000 characters.')
     result = ImportResult()
     users: dict[str, User] = {}
     movies: dict[int, Movie] = {}
-    title_hits: dict[tuple[str, int | None], dict | None] = {}
+    title_hits: dict[tuple[str, int | None, int | None], dict | None] = {}
 
-    unique_keys: list[tuple[str, int | None]] = []
-    seen: set[tuple[str, int | None]] = set()
+    unique_keys: list[tuple[str, int | None, int | None]] = []
+    seen: set[tuple[str, int | None, int | None]] = set()
     for _, row in df.iterrows():
         title = str(row["Movie Name"]).strip() if not pd.isna(row["Movie Name"]) else ""
         if not title or _rating_value(row["Rating10"]) is None:
             continue
-        key = (title, _year_value(row["Year"]))
+        key = (title, _year_value(row["Year"]), _tmdb_id(row.get("TMDB ID")))
         if key not in seen:
             seen.add(key)
             unique_keys.append(key)
 
-    for i, (title, year) in enumerate(unique_keys, start=1):
+    for i, (title, year, explicit_id) in enumerate(unique_keys, start=1):
         try:
-            hit = search_movie(db, title, year)
+            hit = {"id": explicit_id} if explicit_id else search_movie(db, title, year)
         except Exception as exc:  # noqa: BLE001
-            warning = f"TMDB search failed for '{title}' ({year}): {exc}"
+            warning = f"TMDB search failed for '{title}' ({year}); related ratings skipped."
             logger.warning(warning)
             result.warnings.append(warning)
-            title_hits[(title, year)] = None
+            title_hits[(title, year, explicit_id)] = None
             continue
-        title_hits[(title, year)] = hit
+        title_hits[(title, year, explicit_id)] = hit
         if hit is None:
             warning = f"No TMDB match for '{title}' ({year}); related ratings skipped."
             logger.warning(warning)
@@ -150,6 +170,7 @@ def import_letterboxd_csv(db: Session, source: BinaryIO | bytes | str) -> Import
 
     result.unique_titles_resolved = sum(1 for hit in title_hits.values() if hit is not None)
 
+    review_pairs={(r.user_pk,r.movie_id):r for r in db.scalars(select(Review))} if 'Review' in df.columns else {}
     rating_pairs: dict[tuple[int, int], Rating] = {}
     existing_ratings = db.scalars(select(Rating)).all()
     for rating in existing_ratings:
@@ -168,7 +189,7 @@ def import_letterboxd_csv(db: Session, source: BinaryIO | bytes | str) -> Import
             result.skipped_unrated += 1
             continue
 
-        hit = title_hits.get((title, year))
+        hit = title_hits.get((title, year, _tmdb_id(row.get("TMDB ID"))))
         if hit is None:
             result.skipped_unmatched += 1
             continue
@@ -188,6 +209,12 @@ def import_letterboxd_csv(db: Session, source: BinaryIO | bytes | str) -> Import
             db.add(created_rating)
             db.flush()
             rating_pairs[pair_key] = created_rating
+        review_value=row.get('Review')
+        if review_value is not None and not pd.isna(review_value) and str(review_value).strip():
+            review=review_pairs.get(pair_key)
+            if review is None:
+                review=Review(user_pk=user.id,movie_id=movie.id);db.add(review);review_pairs[pair_key]=review
+            review.text=str(review_value).strip();review.updated_at=datetime.utcnow()
         result.imported_ratings += 1
         result.user_ids.add(username)
 

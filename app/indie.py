@@ -53,23 +53,25 @@ def _normalize(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", text.lower()).strip()
 
 
-def _contains_any(haystack: str, needles: tuple[str, ...]) -> bool:
-    return any(needle in haystack for needle in needles)
+def indie_evidence(
+    *, production_companies: list[str], genres: list[str], keywords: list[str],
+) -> list[str]:
+    """Explain a discovery tag; missing evidence is not a non-indie verdict."""
+    reasons = []
+    for label, values, phrases in (
+        ("company", production_companies, INDIE_STUDIO_TOKENS),
+        ("independent keyword", [*genres, *keywords], INDIE_KEYWORD_PHRASES),
+        ("festival keyword", [*genres, *keywords], FESTIVAL_PHRASES),
+    ):
+        for value in values:
+            normalized = " " + _normalize(value) + " "
+            if any(" " + _normalize(phrase) + " " in normalized for phrase in phrases):
+                reasons.append(f"{label}: {value}")
+    return sorted(set(reasons))
 
 
 def classify_indie(
-    *,
-    production_companies: list[str],
-    genres: list[str],
-    keywords: list[str],
+    *, production_companies: list[str], genres: list[str], keywords: list[str],
 ) -> bool:
-    company_blob = " | ".join(_normalize(name) for name in production_companies)
-    if _contains_any(company_blob, INDIE_STUDIO_TOKENS):
-        return True
-
-    tag_blob = " | ".join(_normalize(x) for x in [*genres, *keywords])
-    if _contains_any(tag_blob, INDIE_KEYWORD_PHRASES):
-        return True
-    if _contains_any(tag_blob, FESTIVAL_PHRASES):
-        return True
-    return False
+    return bool(indie_evidence(production_companies=production_companies,
+                              genres=genres, keywords=keywords))

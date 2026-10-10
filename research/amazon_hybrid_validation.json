@@ -1,0 +1,638 @@
+{
+  "source_sha256": "7816bf30c235c5261560e6ebd9ff6875c154ed15fb9827f0eded74b2c48c4f54",
+  "training_rows": 22174,
+  "catalog_products": 1508,
+  "cutoffs_unix": [
+    1390176000,
+    1395964800
+  ],
+  "validation_users": 500,
+  "reserved_test_users": 759,
+  "previous_test_users_excluded": 1000,
+  "validation_users_excluded_from_test": 500,
+  "selection_metric": "validation NDCG@10; all candidates; no final-test tuning",
+  "selected_ratings_baseline": "item_cosine",
+  "selected_hybrid": "item_cosine|review|0.05",
+  "validation": {
+    "popularity": {
+      "ndcg_at_10": 0.03412752241344517,
+      "recall_at_10": 0.07416666666666669,
+      "hit_at_10": 0.108
+    },
+    "popularity|review|0.05": {
+      "ndcg_at_10": 0.03775240423916278,
+      "recall_at_10": 0.06956666666666668,
+      "hit_at_10": 0.106
+    },
+    "popularity|review|0.1": {
+      "ndcg_at_10": 0.041094025680285376,
+      "recall_at_10": 0.07096666666666666,
+      "hit_at_10": 0.11
+    },
+    "popularity|review|0.2": {
+      "ndcg_at_10": 0.045735890049475675,
+      "recall_at_10": 0.07840000000000001,
+      "hit_at_10": 0.116
+    },
+    "popularity|history_item_text|0.05": {
+      "ndcg_at_10": 0.03337325276986302,
+      "recall_at_10": 0.07016666666666667,
+      "hit_at_10": 0.106
+    },
+    "popularity|history_item_text|0.1": {
+      "ndcg_at_10": 0.03263042773337029,
+      "recall_at_10": 0.06716666666666667,
+      "hit_at_10": 0.102
+    },
+    "popularity|history_item_text|0.2": {
+      "ndcg_at_10": 0.03076444715556665,
+      "recall_at_10": 0.06183333333333334,
+      "hit_at_10": 0.092
+    },
+    "popularity|shuffled_review|0.05": {
+      "ndcg_at_10": 0.028612150494475797,
+      "recall_at_10": 0.05233333333333333,
+      "hit_at_10": 0.076
+    },
+    "popularity|shuffled_review|0.1": {
+      "ndcg_at_10": 0.02346838698414789,
+      "recall_at_10": 0.04003333333333333,
+      "hit_at_10": 0.066
+    },
+    "popularity|shuffled_review|0.2": {
+      "ndcg_at_10": 0.02375378894621545,
+      "recall_at_10": 0.04365,
+      "hit_at_10": 0.068
+    },
+    "item_cosine": {
+      "ndcg_at_10": 0.09183593969684493,
+      "recall_at_10": 0.13200000000000003,
+      "hit_at_10": 0.198
+    },
+    "item_cosine|review|0.05": {
+      "ndcg_at_10": 0.09592340856228361,
+      "recall_at_10": 0.14333333333333334,
+      "hit_at_10": 0.222
+    },
+    "item_cosine|review|0.1": {
+      "ndcg_at_10": 0.09270094228521204,
+      "recall_at_10": 0.1365,
+      "hit_at_10": 0.214
+    },
+    "item_cosine|review|0.2": {
+      "ndcg_at_10": 0.0908786608547695,
+      "recall_at_10": 0.12870000000000004,
+      "hit_at_10": 0.2
+    },
+    "item_cosine|history_item_text|0.05": {
+      "ndcg_at_10": 0.10154972447283343,
+      "recall_at_10": 0.14929999999999996,
+      "hit_at_10": 0.232
+    },
+    "item_cosine|history_item_text|0.1": {
+      "ndcg_at_10": 0.09979084435481979,
+      "recall_at_10": 0.14713333333333334,
+      "hit_at_10": 0.228
+    },
+    "item_cosine|history_item_text|0.2": {
+      "ndcg_at_10": 0.10333340876113027,
+      "recall_at_10": 0.1571333333333333,
+      "hit_at_10": 0.24
+    },
+    "item_cosine|shuffled_review|0.05": {
+      "ndcg_at_10": 0.054787458153201116,
+      "recall_at_10": 0.09516666666666668,
+      "hit_at_10": 0.152
+    },
+    "item_cosine|shuffled_review|0.1": {
+      "ndcg_at_10": 0.04763766627361494,
+      "recall_at_10": 0.08403333333333335,
+      "hit_at_10": 0.128
+    },
+    "item_cosine|shuffled_review|0.2": {
+      "ndcg_at_10": 0.038791073859646835,
+      "recall_at_10": 0.06023333333333332,
+      "hit_at_10": 0.098
+    },
+    "svd_100_reg0.02_seed42": {
+      "ndcg_at_10": 0.004975993404691712,
+      "recall_at_10": 0.0115,
+      "hit_at_10": 0.016
+    },
+    "svd_100_reg0.02_seed42|review|0.05": {
+      "ndcg_at_10": 0.018666488258377197,
+      "recall_at_10": 0.031166666666666672,
+      "hit_at_10": 0.048
+    },
+    "svd_100_reg0.02_seed42|review|0.1": {
+      "ndcg_at_10": 0.02113963106195048,
+      "recall_at_10": 0.034833333333333334,
+      "hit_at_10": 0.05
+    },
+    "svd_100_reg0.02_seed42|review|0.2": {
+      "ndcg_at_10": 0.024015121924736718,
+      "recall_at_10": 0.03916666666666666,
+      "hit_at_10": 0.058
+    },
+    "svd_100_reg0.02_seed42|history_item_text|0.05": {
+      "ndcg_at_10": 0.019828254544343664,
+      "recall_at_10": 0.03228333333333334,
+      "hit_at_10": 0.054
+    },
+    "svd_100_reg0.02_seed42|history_item_text|0.1": {
+      "ndcg_at_10": 0.02110993856475332,
+      "recall_at_10": 0.03028333333333334,
+      "hit_at_10": 0.052
+    },
+    "svd_100_reg0.02_seed42|history_item_text|0.2": {
+      "ndcg_at_10": 0.02644611481464393,
+      "recall_at_10": 0.042016666666666674,
+      "hit_at_10": 0.068
+    },
+    "svd_100_reg0.02_seed42|shuffled_review|0.05": {
+      "ndcg_at_10": 0.00863250686018769,
+      "recall_at_10": 0.01861666666666667,
+      "hit_at_10": 0.03
+    },
+    "svd_100_reg0.02_seed42|shuffled_review|0.1": {
+      "ndcg_at_10": 0.008224485900291572,
+      "recall_at_10": 0.015283333333333333,
+      "hit_at_10": 0.028
+    },
+    "svd_100_reg0.02_seed42|shuffled_review|0.2": {
+      "ndcg_at_10": 0.01037938096899479,
+      "recall_at_10": 0.018383333333333335,
+      "hit_at_10": 0.03
+    },
+    "svd_20_reg0.1_seed42": {
+      "ndcg_at_10": 0.013041379245301812,
+      "recall_at_10": 0.019899999999999998,
+      "hit_at_10": 0.028
+    },
+    "svd_20_reg0.1_seed42|review|0.05": {
+      "ndcg_at_10": 0.019922251022894067,
+      "recall_at_10": 0.031700000000000006,
+      "hit_at_10": 0.046
+    },
+    "svd_20_reg0.1_seed42|review|0.1": {
+      "ndcg_at_10": 0.02221023334545156,
+      "recall_at_10": 0.0347,
+      "hit_at_10": 0.048
+    },
+    "svd_20_reg0.1_seed42|review|0.2": {
+      "ndcg_at_10": 0.02586447894911961,
+      "recall_at_10": 0.04096666666666666,
+      "hit_at_10": 0.054
+    },
+    "svd_20_reg0.1_seed42|history_item_text|0.05": {
+      "ndcg_at_10": 0.0207228881710462,
+      "recall_at_10": 0.034216666666666666,
+      "hit_at_10": 0.05
+    },
+    "svd_20_reg0.1_seed42|history_item_text|0.1": {
+      "ndcg_at_10": 0.022849756047917967,
+      "recall_at_10": 0.03821666666666667,
+      "hit_at_10": 0.052
+    },
+    "svd_20_reg0.1_seed42|history_item_text|0.2": {
+      "ndcg_at_10": 0.025331169093013178,
+      "recall_at_10": 0.03928333333333334,
+      "hit_at_10": 0.056
+    },
+    "svd_20_reg0.1_seed42|shuffled_review|0.05": {
+      "ndcg_at_10": 0.009051753598175416,
+      "recall_at_10": 0.020116666666666668,
+      "hit_at_10": 0.03
+    },
+    "svd_20_reg0.1_seed42|shuffled_review|0.1": {
+      "ndcg_at_10": 0.00975709962547652,
+      "recall_at_10": 0.019049999999999997,
+      "hit_at_10": 0.032
+    },
+    "svd_20_reg0.1_seed42|shuffled_review|0.2": {
+      "ndcg_at_10": 0.010716624339563705,
+      "recall_at_10": 0.020316666666666667,
+      "hit_at_10": 0.034
+    },
+    "svd_100_reg0.02_seed7": {
+      "ndcg_at_10": 0.012383035819288462,
+      "recall_at_10": 0.022499999999999996,
+      "hit_at_10": 0.03
+    },
+    "svd_100_reg0.02_seed7|review|0.05": {
+      "ndcg_at_10": 0.02072640757446897,
+      "recall_at_10": 0.03333333333333333,
+      "hit_at_10": 0.048
+    },
+    "svd_100_reg0.02_seed7|review|0.1": {
+      "ndcg_at_10": 0.023337122373267034,
+      "recall_at_10": 0.037000000000000005,
+      "hit_at_10": 0.054
+    },
+    "svd_100_reg0.02_seed7|review|0.2": {
+      "ndcg_at_10": 0.03098242964197585,
+      "recall_at_10": 0.05033333333333333,
+      "hit_at_10": 0.07
+    },
+    "svd_100_reg0.02_seed7|history_item_text|0.05": {
+      "ndcg_at_10": 0.021772059991972015,
+      "recall_at_10": 0.03506666666666667,
+      "hit_at_10": 0.052
+    },
+    "svd_100_reg0.02_seed7|history_item_text|0.1": {
+      "ndcg_at_10": 0.023938483761807742,
+      "recall_at_10": 0.03780000000000001,
+      "hit_at_10": 0.058
+    },
+    "svd_100_reg0.02_seed7|history_item_text|0.2": {
+      "ndcg_at_10": 0.031042126852711075,
+      "recall_at_10": 0.05265238095238095,
+      "hit_at_10": 0.078
+    },
+    "svd_100_reg0.02_seed7|shuffled_review|0.05": {
+      "ndcg_at_10": 0.007326837578739409,
+      "recall_at_10": 0.01365,
+      "hit_at_10": 0.028
+    },
+    "svd_100_reg0.02_seed7|shuffled_review|0.1": {
+      "ndcg_at_10": 0.006818401526216781,
+      "recall_at_10": 0.011602380952380953,
+      "hit_at_10": 0.03
+    },
+    "svd_100_reg0.02_seed7|shuffled_review|0.2": {
+      "ndcg_at_10": 0.007025898633570223,
+      "recall_at_10": 0.01065,
+      "hit_at_10": 0.026
+    },
+    "svd_20_reg0.1_seed7": {
+      "ndcg_at_10": 0.011294357743441613,
+      "recall_at_10": 0.020399999999999998,
+      "hit_at_10": 0.028
+    },
+    "svd_20_reg0.1_seed7|review|0.05": {
+      "ndcg_at_10": 0.018537112930118643,
+      "recall_at_10": 0.026199999999999998,
+      "hit_at_10": 0.036
+    },
+    "svd_20_reg0.1_seed7|review|0.1": {
+      "ndcg_at_10": 0.019648392892712703,
+      "recall_at_10": 0.029366666666666666,
+      "hit_at_10": 0.042
+    },
+    "svd_20_reg0.1_seed7|review|0.2": {
+      "ndcg_at_10": 0.02163637805043028,
+      "recall_at_10": 0.033466666666666665,
+      "hit_at_10": 0.046
+    },
+    "svd_20_reg0.1_seed7|history_item_text|0.05": {
+      "ndcg_at_10": 0.017423642657729322,
+      "recall_at_10": 0.02213333333333333,
+      "hit_at_10": 0.032
+    },
+    "svd_20_reg0.1_seed7|history_item_text|0.1": {
+      "ndcg_at_10": 0.019686687727172084,
+      "recall_at_10": 0.03013333333333333,
+      "hit_at_10": 0.042
+    },
+    "svd_20_reg0.1_seed7|history_item_text|0.2": {
+      "ndcg_at_10": 0.02437789808649856,
+      "recall_at_10": 0.0402,
+      "hit_at_10": 0.058
+    },
+    "svd_20_reg0.1_seed7|shuffled_review|0.05": {
+      "ndcg_at_10": 0.007526434866944698,
+      "recall_at_10": 0.014150000000000001,
+      "hit_at_10": 0.026
+    },
+    "svd_20_reg0.1_seed7|shuffled_review|0.1": {
+      "ndcg_at_10": 0.007290593699819442,
+      "recall_at_10": 0.01365,
+      "hit_at_10": 0.024
+    },
+    "svd_20_reg0.1_seed7|shuffled_review|0.2": {
+      "ndcg_at_10": 0.00775300594107888,
+      "recall_at_10": 0.012216666666666667,
+      "hit_at_10": 0.022
+    },
+    "svd_100_reg0.02_seed2026": {
+      "ndcg_at_10": 0.009028175541606513,
+      "recall_at_10": 0.019804761904761905,
+      "hit_at_10": 0.03
+    },
+    "svd_100_reg0.02_seed2026|review|0.05": {
+      "ndcg_at_10": 0.020086723732273708,
+      "recall_at_10": 0.03063809523809524,
+      "hit_at_10": 0.044
+    },
+    "svd_100_reg0.02_seed2026|review|0.1": {
+      "ndcg_at_10": 0.023316944047394633,
+      "recall_at_10": 0.03551904761904761,
+      "hit_at_10": 0.054
+    },
+    "svd_100_reg0.02_seed2026|review|0.2": {
+      "ndcg_at_10": 0.026722560182192674,
+      "recall_at_10": 0.038685714285714275,
+      "hit_at_10": 0.06
+    },
+    "svd_100_reg0.02_seed2026|history_item_text|0.05": {
+      "ndcg_at_10": 0.021655942485076095,
+      "recall_at_10": 0.037521428571428574,
+      "hit_at_10": 0.052
+    },
+    "svd_100_reg0.02_seed2026|history_item_text|0.1": {
+      "ndcg_at_10": 0.022358318989657504,
+      "recall_at_10": 0.03606904761904762,
+      "hit_at_10": 0.056
+    },
+    "svd_100_reg0.02_seed2026|history_item_text|0.2": {
+      "ndcg_at_10": 0.02651197561137074,
+      "recall_at_10": 0.04406904761904762,
+      "hit_at_10": 0.068
+    },
+    "svd_100_reg0.02_seed2026|shuffled_review|0.05": {
+      "ndcg_at_10": 0.008006780674239582,
+      "recall_at_10": 0.018871428571428574,
+      "hit_at_10": 0.03
+    },
+    "svd_100_reg0.02_seed2026|shuffled_review|0.1": {
+      "ndcg_at_10": 0.006540447304161375,
+      "recall_at_10": 0.012585714285714285,
+      "hit_at_10": 0.024
+    },
+    "svd_100_reg0.02_seed2026|shuffled_review|0.2": {
+      "ndcg_at_10": 0.006370110831625367,
+      "recall_at_10": 0.011919047619047619,
+      "hit_at_10": 0.024
+    },
+    "svd_20_reg0.1_seed2026": {
+      "ndcg_at_10": 0.008964550882521752,
+      "recall_at_10": 0.017566666666666668,
+      "hit_at_10": 0.026
+    },
+    "svd_20_reg0.1_seed2026|review|0.05": {
+      "ndcg_at_10": 0.02039609646801089,
+      "recall_at_10": 0.032233333333333336,
+      "hit_at_10": 0.05
+    },
+    "svd_20_reg0.1_seed2026|review|0.1": {
+      "ndcg_at_10": 0.02094035972756989,
+      "recall_at_10": 0.02823333333333334,
+      "hit_at_10": 0.044
+    },
+    "svd_20_reg0.1_seed2026|review|0.2": {
+      "ndcg_at_10": 0.025915143795389763,
+      "recall_at_10": 0.04016666666666667,
+      "hit_at_10": 0.058
+    },
+    "svd_20_reg0.1_seed2026|history_item_text|0.05": {
+      "ndcg_at_10": 0.019290523995888494,
+      "recall_at_10": 0.0308,
+      "hit_at_10": 0.044
+    },
+    "svd_20_reg0.1_seed2026|history_item_text|0.1": {
+      "ndcg_at_10": 0.021814423652941436,
+      "recall_at_10": 0.03525238095238095,
+      "hit_at_10": 0.056
+    },
+    "svd_20_reg0.1_seed2026|history_item_text|0.2": {
+      "ndcg_at_10": 0.025273993508978763,
+      "recall_at_10": 0.03965238095238095,
+      "hit_at_10": 0.06
+    },
+    "svd_20_reg0.1_seed2026|shuffled_review|0.05": {
+      "ndcg_at_10": 0.008011465298838996,
+      "recall_at_10": 0.017383333333333334,
+      "hit_at_10": 0.028
+    },
+    "svd_20_reg0.1_seed2026|shuffled_review|0.1": {
+      "ndcg_at_10": 0.007915190635998638,
+      "recall_at_10": 0.015383333333333332,
+      "hit_at_10": 0.026
+    },
+    "svd_20_reg0.1_seed2026|shuffled_review|0.2": {
+      "ndcg_at_10": 0.011582756208209637,
+      "recall_at_10": 0.021983333333333334,
+      "hit_at_10": 0.034
+    }
+  },
+  "test": {
+    "item_cosine": {
+      "ndcg_at_10": 0.051281832170644234,
+      "recall_at_10": 0.08374113808896419,
+      "hit_at_10": 0.13438735177865613
+    },
+    "item_cosine|review|0.05": {
+      "ndcg_at_10": 0.06495120236759534,
+      "recall_at_10": 0.10092226613965745,
+      "hit_at_10": 0.15678524374176547
+    },
+    "item_cosine|history_item_text|0.05": {
+      "ndcg_at_10": 0.06733509466475833,
+      "recall_at_10": 0.10175669740887135,
+      "hit_at_10": 0.16469038208168643
+    },
+    "item_cosine|shuffled_review|0.05": {
+      "ndcg_at_10": 0.03194397966150994,
+      "recall_at_10": 0.05581906016688625,
+      "hit_at_10": 0.08563899868247694
+    }
+  },
+  "rating_baselines_test": {
+    "popularity": {
+      "ndcg_at_10": 0.026124466930515816,
+      "recall_at_10": 0.04973649538866931,
+      "hit_at_10": 0.07905138339920949
+    },
+    "item_cosine": {
+      "ndcg_at_10": 0.051281832170644234,
+      "recall_at_10": 0.08374113808896419,
+      "hit_at_10": 0.13438735177865613
+    },
+    "svd_100_reg0.02_seed42": {
+      "ndcg_at_10": 0.00917558121157689,
+      "recall_at_10": 0.017237593324549848,
+      "hit_at_10": 0.030303030303030304
+    },
+    "svd_20_reg0.1_seed42": {
+      "ndcg_at_10": 0.005128066058614105,
+      "recall_at_10": 0.010737812911725956,
+      "hit_at_10": 0.023715415019762844
+    },
+    "svd_100_reg0.02_seed7": {
+      "ndcg_at_10": 0.008830181518674918,
+      "recall_at_10": 0.01714975845410628,
+      "hit_at_10": 0.034255599472990776
+    },
+    "svd_20_reg0.1_seed7": {
+      "ndcg_at_10": 0.0037489611122587235,
+      "recall_at_10": 0.007619675010979357,
+      "hit_at_10": 0.015810276679841896
+    },
+    "svd_100_reg0.02_seed2026": {
+      "ndcg_at_10": 0.007922005852751537,
+      "recall_at_10": 0.012779973649538865,
+      "hit_at_10": 0.022397891963109356
+    },
+    "svd_20_reg0.1_seed2026": {
+      "ndcg_at_10": 0.004416656771421076,
+      "recall_at_10": 0.00849802371541502,
+      "hit_at_10": 0.017127799736495388
+    }
+  },
+  "seed_sensitivity_fixed_20_percent": {
+    "svd_100_reg0.02_seed42": {
+      "ndcg_difference": 0.005822736857396106,
+      "bootstrap_95_interval": [
+        -0.0003478484298188934,
+        0.01227483586020986
+      ]
+    },
+    "svd_20_reg0.1_seed42": {
+      "ndcg_difference": 0.006313166497235434,
+      "bootstrap_95_interval": [
+        0.0021869630823141816,
+        0.010434826071208351
+      ]
+    },
+    "svd_100_reg0.02_seed7": {
+      "ndcg_difference": 0.008218880265247376,
+      "bootstrap_95_interval": [
+        0.0030930768246121283,
+        0.013466884256832451
+      ]
+    },
+    "svd_20_reg0.1_seed7": {
+      "ndcg_difference": 0.004577203909254087,
+      "bootstrap_95_interval": [
+        0.0008670639969966682,
+        0.008441053862397742
+      ]
+    },
+    "svd_100_reg0.02_seed2026": {
+      "ndcg_difference": 0.002860174243993515,
+      "bootstrap_95_interval": [
+        -0.0023023120243989945,
+        0.0077717899658353105
+      ]
+    },
+    "svd_20_reg0.1_seed2026": {
+      "ndcg_difference": 0.002340101792103692,
+      "bootstrap_95_interval": [
+        -0.0015261755071819517,
+        0.005998812387610622
+      ]
+    }
+  },
+  "hybrid_vs_best_ratings": {
+    "ndcg_difference": 0.013669370196951119,
+    "bootstrap_95_interval": [
+      0.0071794998547421085,
+      0.020364973408015314
+    ]
+  },
+  "buckets": {
+    "one_rating": {
+      "users": 127,
+      "results": {
+        "item_cosine": {
+          "ndcg_at_10": 0.040243448957360116,
+          "recall_at_10": 0.05879265091863516,
+          "hit_at_10": 0.12598425196850394
+        },
+        "item_cosine|review|0.05": {
+          "ndcg_at_10": 0.042671285986776414,
+          "recall_at_10": 0.07020997375328084,
+          "hit_at_10": 0.14960629921259844
+        },
+        "item_cosine|history_item_text|0.05": {
+          "ndcg_at_10": 0.04399211058901295,
+          "recall_at_10": 0.06469816272965878,
+          "hit_at_10": 0.14173228346456693
+        },
+        "item_cosine|shuffled_review|0.05": {
+          "ndcg_at_10": 0.027506589487996044,
+          "recall_at_10": 0.04593175853018373,
+          "hit_at_10": 0.10236220472440945
+        }
+      }
+    },
+    "two_to_five": {
+      "users": 490,
+      "results": {
+        "item_cosine": {
+          "ndcg_at_10": 0.05079093876765103,
+          "recall_at_10": 0.08685617103984451,
+          "hit_at_10": 0.13673469387755102
+        },
+        "item_cosine|review|0.05": {
+          "ndcg_at_10": 0.06650447044541567,
+          "recall_at_10": 0.10414965986394557,
+          "hit_at_10": 0.15306122448979592
+        },
+        "item_cosine|history_item_text|0.05": {
+          "ndcg_at_10": 0.07176156702125326,
+          "recall_at_10": 0.10789115646258504,
+          "hit_at_10": 0.1673469387755102
+        },
+        "item_cosine|shuffled_review|0.05": {
+          "ndcg_at_10": 0.032383133194460303,
+          "recall_at_10": 0.058163265306122446,
+          "hit_at_10": 0.08571428571428572
+        }
+      }
+    },
+    "six_plus": {
+      "users": 142,
+      "results": {
+        "item_cosine": {
+          "ndcg_at_10": 0.06284811692806512,
+          "recall_at_10": 0.09530516431924882,
+          "hit_at_10": 0.13380281690140844
+        },
+        "item_cosine|review|0.05": {
+          "ndcg_at_10": 0.07951773773542675,
+          "recall_at_10": 0.11725352112676056,
+          "hit_at_10": 0.176056338028169
+        },
+        "item_cosine|history_item_text|0.05": {
+          "ndcg_at_10": 0.07293782369952706,
+          "recall_at_10": 0.1137323943661972,
+          "hit_at_10": 0.176056338028169
+        },
+        "item_cosine|shuffled_review|0.05": {
+          "ndcg_at_10": 0.034397242484683184,
+          "recall_at_10": 0.05657276995305164,
+          "hit_at_10": 0.07042253521126761
+        }
+      }
+    }
+  },
+  "controls": {
+    "item_cosine|history_item_text|0.05": {
+      "ndcg_difference": -0.0023838922971629872,
+      "bootstrap_95_interval": [
+        -0.007999097467580273,
+        0.0029831115333964547
+      ]
+    },
+    "item_cosine|shuffled_review|0.05": {
+      "ndcg_difference": 0.033007222706085394,
+      "bootstrap_95_interval": [
+        0.021936916896735038,
+        0.04478566137707106
+      ]
+    }
+  },
+  "limits": [
+    "Reserved users had not appeared in earlier ranking reports, but same dataset and earlier training reviews were used in sentiment work.",
+    "Mixed video products; titles and indie classifications unavailable.",
+    "All item documents and user histories use training reviews only; no held-out review text used.",
+    "History-item-text control uses other users earlier reviews, so is not a ratings-only baseline.",
+    "Shuffled control permutes candidate text associations, preserving the score distribution.",
+    "Bootstrap intervals cover user sampling, not product clustering or multiple comparisons.",
+    "Observational future positive ratings; unobserved products are not verified dislikes.",
+    "No claim of globally optimal model or validated aspect sentiment."
+  ],
+  "evaluation_script_sha256": "2eba7f8e477641e7d02da5e7a9f4a8aa2b316f3189741fa64dd32f4ae9f5197e",
+  "status": "Offline research result; not a live indie-film model"
+}

@@ -1,0 +1,33 @@
+{
+  "purpose": "Confirmed corrections to the generated synthetic catalog only. These are not global title/year aliases; other same-title films remain valid movies.",
+  "repairs": [
+    {
+      "old_tmdb_id": 526667,
+      "new_tmdb_id": 310131,
+      "source_title": "The Witch",
+      "source_year": 2015,
+      "source": "https://www.themoviedb.org/movie/310131"
+    },
+    {
+      "old_tmdb_id": 698232,
+      "new_tmdb_id": 97370,
+      "source_title": "Under the Skin",
+      "source_year": 2013,
+      "source": "https://www.themoviedb.org/movie/97370"
+    },
+    {
+      "old_tmdb_id": 1109615,
+      "new_tmdb_id": 914206,
+      "source_title": "The Beast",
+      "source_year": 2023,
+      "source": "https://www.themoviedb.org/movie/914206"
+    },
+    {
+      "old_tmdb_id": 1353802,
+      "new_tmdb_id": 1640,
+      "source_title": "Crash",
+      "source_year": 2004,
+      "source": "https://www.themoviedb.org/movie/1640"
+    }
+  ]
+}

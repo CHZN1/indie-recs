@@ -1,0 +1,198 @@
+{
+  "synthetic": true,
+  "purpose": "New wording labeled before scoring the scoped extractor; same authoring process, not independent human evidence. Consumed after this run.",
+  "cases": [
+    {
+      "id": "s01",
+      "group": "explicit",
+      "feature": "composer:hans zimmer",
+      "expected": 1,
+      "rating": 8,
+      "text": "I adored Hans Zimmer on this one."
+    },
+    {
+      "id": "s02",
+      "group": "explicit",
+      "feature": "music:jazz percussion",
+      "expected": 1,
+      "rating": 8,
+      "text": "The jazz drumming was excellent in the final scene."
+    },
+    {
+      "id": "s03",
+      "group": "explicit",
+      "feature": "visual:pastel palette",
+      "expected": -1,
+      "rating": 8,
+      "text": "Those pastel colours were distracting."
+    },
+    {
+      "id": "s04",
+      "group": "explicit",
+      "feature": "visual:symmetrical framing",
+      "expected": 1,
+      "rating": 8,
+      "text": "I loved the symmetric framing more than the performances."
+    },
+    {
+      "id": "s05",
+      "group": "negation",
+      "feature": "composer:hans zimmer",
+      "expected": -1,
+      "rating": 8,
+      "text": "I do not find Hans Zimmer enjoyable here."
+    },
+    {
+      "id": "s06",
+      "group": "negation",
+      "feature": "music:jazz percussion",
+      "expected": -1,
+      "rating": 8,
+      "text": "I hardly enjoyed the jazz drums."
+    },
+    {
+      "id": "s07",
+      "group": "negation",
+      "feature": "visual:pastel palette",
+      "expected": -1,
+      "rating": 8,
+      "text": "The pastel palette is anything but lovely."
+    },
+    {
+      "id": "s08",
+      "group": "negation",
+      "feature": "visual:symmetrical framing",
+      "expected": 0,
+      "rating": 8,
+      "text": "I cannot decide whether I like the centered framing."
+    },
+    {
+      "id": "s09",
+      "group": "attribution",
+      "feature": "composer:hans zimmer",
+      "expected": 0,
+      "rating": 8,
+      "text": "My roommate likes Hans Zimmer; I have yet to form an opinion."
+    },
+    {
+      "id": "s10",
+      "group": "attribution",
+      "feature": "music:jazz percussion",
+      "expected": 0,
+      "rating": 8,
+      "text": "The podcast host thinks the jazz percussion is great."
+    },
+    {
+      "id": "s11",
+      "group": "attribution",
+      "feature": "visual:pastel palette",
+      "expected": 1,
+      "rating": 8,
+      "text": "Some people hate the pastel palette; I loved it."
+    },
+    {
+      "id": "s12",
+      "group": "attribution",
+      "feature": "visual:symmetrical framing",
+      "expected": -1,
+      "rating": 8,
+      "text": "Reviewers enjoy the symmetrical framing, but I found the symmetrical framing annoying."
+    },
+    {
+      "id": "s13",
+      "group": "scope",
+      "feature": "composer:hans zimmer",
+      "expected": 0,
+      "rating": 8,
+      "text": "I enjoyed the dialogue in the Hans Zimmer scene."
+    },
+    {
+      "id": "s14",
+      "group": "scope",
+      "feature": "music:jazz percussion",
+      "expected": 1,
+      "rating": 8,
+      "text": "The jazz drums are my favorite part even though I disliked the plot."
+    },
+    {
+      "id": "s15",
+      "group": "scope",
+      "feature": "visual:pastel palette",
+      "expected": 0,
+      "rating": 8,
+      "text": "I loved the leading actor standing against those pastel colors."
+    },
+    {
+      "id": "s16",
+      "group": "scope",
+      "feature": "visual:symmetrical framing",
+      "expected": 1,
+      "rating": 8,
+      "text": "The story bored me while the symmetrical framing was beautiful."
+    },
+    {
+      "id": "s17",
+      "group": "sarcasm",
+      "feature": "composer:hans zimmer",
+      "expected": -1,
+      "rating": 8,
+      "text": "Lovely Hans Zimmer score, if relentless noise is your idea of beauty."
+    },
+    {
+      "id": "s18",
+      "group": "sarcasm",
+      "feature": "music:jazz percussion",
+      "expected": -1,
+      "rating": 8,
+      "text": "I just love the jazz drums keeping me from hearing any dialogue."
+    },
+    {
+      "id": "s19",
+      "group": "sarcasm",
+      "feature": "visual:pastel palette",
+      "expected": -1,
+      "rating": 8,
+      "text": "Great pastel palette. Sure, that is what the script was missing."
+    },
+    {
+      "id": "s20",
+      "group": "sarcasm",
+      "feature": "visual:symmetrical framing",
+      "expected": -1,
+      "rating": 8,
+      "text": "Amazing centered framing. Truly the cure for nonexistent characters."
+    },
+    {
+      "id": "s21",
+      "group": "neutral",
+      "feature": "composer:hans zimmer",
+      "expected": 0,
+      "rating": 8,
+      "text": "Hans Zimmer and the director discuss the recording sessions."
+    },
+    {
+      "id": "s22",
+      "group": "neutral",
+      "feature": "music:jazz percussion",
+      "expected": 0,
+      "rating": 8,
+      "text": "Jazz percussion enters at roughly the forty-minute mark."
+    },
+    {
+      "id": "s23",
+      "group": "neutral",
+      "feature": "visual:pastel palette",
+      "expected": 0,
+      "rating": 8,
+      "text": "The designer used a pastel palette during the flashbacks."
+    },
+    {
+      "id": "s24",
+      "group": "neutral",
+      "feature": "visual:symmetrical framing",
+      "expected": 0,
+      "rating": 8,
+      "text": "The centered framing occupies the first chapter."
+    }
+  ]
+}

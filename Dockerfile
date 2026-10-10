@@ -9,7 +9,10 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
-RUN mkdir -p data models
+RUN useradd --uid 10001 --create-home indie \
+    && mkdir -p data models \
+    && chown -R indie:indie /app
+USER indie
 
 EXPOSE 8000
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

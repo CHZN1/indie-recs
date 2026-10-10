@@ -52,3 +52,33 @@ class TmdbCache(Base):
     cache_key: Mapped[str] = mapped_column(String(512), primary_key=True)
     payload: Mapped[str] = mapped_column(Text, nullable=False)
     created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+
+
+class ApiCredential(Base):
+    __tablename__ = 'api_credentials'
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    user_pk: Mapped[int] = mapped_column(ForeignKey('users.id'), index=True)
+    token_hash: Mapped[str] = mapped_column(String(64), unique=True, index=True)
+    is_admin: Mapped[bool] = mapped_column(Boolean, default=False)
+    revoked: Mapped[bool] = mapped_column(Boolean, default=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+
+
+class Review(Base):
+    __tablename__ = 'reviews'
+    __table_args__ = (UniqueConstraint('user_pk','movie_id',name='uq_user_movie_review'),)
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    user_pk: Mapped[int] = mapped_column(ForeignKey('users.id'), index=True)
+    movie_id: Mapped[int] = mapped_column(ForeignKey('movies.id'), index=True)
+    text: Mapped[str] = mapped_column(Text)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+
+
+class TrainingJob(Base):
+    __tablename__ = 'training_jobs'
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    owner_pk: Mapped[int | None] = mapped_column(ForeignKey('users.id'), nullable=True)
+    status: Mapped[str] = mapped_column(String(16), default='queued', index=True)
+    error: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    finished_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)

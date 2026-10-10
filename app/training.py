@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import logging
+import os
+import tempfile
 from pathlib import Path
 
 import joblib
@@ -44,7 +46,13 @@ def train_svd(db: Session, model_path: str | None = None) -> bool:
     }
     path = Path(model_path or get_settings().model_path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    joblib.dump(payload, path)
+    fd, temporary = tempfile.mkstemp(prefix=path.name+'.', suffix='.tmp', dir=path.parent)
+    os.close(fd)
+    try:
+        joblib.dump(payload, temporary)
+        os.replace(temporary, path)
+    finally:
+        Path(temporary).unlink(missing_ok=True)
     logger.info("Saved SVD model to %s (%s ratings)", path, len(df))
     return True
 

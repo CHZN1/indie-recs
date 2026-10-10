@@ -1,0 +1,327 @@
+{
+  "synthetic": true,
+  "authored_date": "2026-10-08",
+  "purpose": "New wording authored and labeled before scoring a frozen extractor. Same authoring process; not independent real-user review evidence. Once evaluated, this set is consumed.",
+  "cases": [
+    {
+      "id": "h01",
+      "group": "explicit",
+      "feature": "composer:hans zimmer",
+      "rating": 9,
+      "expected": 1,
+      "text": "Hans Zimmer made the whole film for me; I loved his contribution."
+    },
+    {
+      "id": "h02",
+      "group": "explicit",
+      "feature": "visual:pastel palette",
+      "rating": 3,
+      "expected": 1,
+      "text": "I enjoyed the pastel palette even though I gave the film a low rating."
+    },
+    {
+      "id": "h03",
+      "group": "explicit",
+      "feature": "music:jazz percussion",
+      "rating": 8,
+      "expected": -1,
+      "text": "The jazz drums were annoying throughout the chase."
+    },
+    {
+      "id": "h04",
+      "group": "explicit",
+      "feature": "visual:symmetrical framing",
+      "rating": 7,
+      "expected": -1,
+      "text": "I hated the centered framing in those hallway shots."
+    },
+    {
+      "id": "h05",
+      "group": "explicit",
+      "feature": "composer:hans zimmer",
+      "rating": 8,
+      "expected": 1,
+      "text": "The Hans Zimmer score is gorgeous when the characters finally stop talking."
+    },
+    {
+      "id": "h06",
+      "group": "negation",
+      "feature": "composer:hans zimmer",
+      "rating": 9,
+      "expected": -1,
+      "text": "I do not like Hans Zimmer in this particular film."
+    },
+    {
+      "id": "h07",
+      "group": "negation",
+      "feature": "visual:pastel palette",
+      "rating": 8,
+      "expected": -1,
+      "text": "I never enjoyed those pastel colours in the dream scenes."
+    },
+    {
+      "id": "h08",
+      "group": "negation",
+      "feature": "music:jazz percussion",
+      "rating": 7,
+      "expected": -1,
+      "text": "I can't say I liked the jazz percussion."
+    },
+    {
+      "id": "h09",
+      "group": "negation",
+      "feature": "visual:symmetrical framing",
+      "rating": 9,
+      "expected": -1,
+      "text": "I wouldn't describe the symmetrical framing as beautiful."
+    },
+    {
+      "id": "h10",
+      "group": "negation",
+      "feature": "composer:hans zimmer",
+      "rating": 5,
+      "expected": 0,
+      "text": "It is not that I hate Hans Zimmer; I just have no strong feeling here."
+    },
+    {
+      "id": "h11",
+      "group": "attribution",
+      "feature": "composer:hans zimmer",
+      "rating": 6,
+      "expected": 0,
+      "text": "My sister loves Hans Zimmer; I mostly noticed the dialogue."
+    },
+    {
+      "id": "h12",
+      "group": "attribution",
+      "feature": "visual:pastel palette",
+      "rating": 8,
+      "expected": 0,
+      "text": "A blogger called the pastel colors amazing. That is their opinion."
+    },
+    {
+      "id": "h13",
+      "group": "attribution",
+      "feature": "music:jazz percussion",
+      "rating": 8,
+      "expected": 0,
+      "text": "\u201cI adore jazz drums,\u201d the director said in the interview."
+    },
+    {
+      "id": "h14",
+      "group": "attribution",
+      "feature": "visual:symmetrical framing",
+      "rating": 8,
+      "expected": 1,
+      "text": "Critics dislike the symmetrical framing, but I think it is gorgeous."
+    },
+    {
+      "id": "h15",
+      "group": "attribution",
+      "feature": "composer:hans zimmer",
+      "rating": 9,
+      "expected": -1,
+      "text": "My friends loved Hans Zimmer, whereas I found Hans Zimmer distracting."
+    },
+    {
+      "id": "h16",
+      "group": "mixed",
+      "feature": "composer:hans zimmer",
+      "rating": 2,
+      "expected": 1,
+      "text": "The dialogue was boring; Hans Zimmer was excellent."
+    },
+    {
+      "id": "h17",
+      "group": "mixed",
+      "feature": "visual:pastel palette",
+      "rating": 9,
+      "expected": -1,
+      "text": "Beautiful costumes, distracting pastel colors."
+    },
+    {
+      "id": "h18",
+      "group": "mixed",
+      "feature": "music:jazz percussion",
+      "rating": 9,
+      "expected": -1,
+      "text": "I loved the acting while the jazz percussion was annoying."
+    },
+    {
+      "id": "h19",
+      "group": "mixed",
+      "feature": "visual:symmetrical framing",
+      "rating": 4,
+      "expected": 1,
+      "text": "I liked the symmetrical framing despite hating the story."
+    },
+    {
+      "id": "h20",
+      "group": "mixed",
+      "feature": "composer:hans zimmer",
+      "rating": 8,
+      "expected": -1,
+      "text": "I loved the editing, but not the Hans Zimmer score."
+    },
+    {
+      "id": "h21",
+      "group": "implicit",
+      "feature": "composer:hans zimmer",
+      "rating": 8,
+      "expected": 1,
+      "text": "I will rewatch this purely to hear Hans Zimmer's music."
+    },
+    {
+      "id": "h22",
+      "group": "implicit",
+      "feature": "visual:pastel palette",
+      "rating": 8,
+      "expected": 1,
+      "text": "Those pastel colours are exactly the look I seek out."
+    },
+    {
+      "id": "h23",
+      "group": "implicit",
+      "feature": "music:jazz percussion",
+      "rating": 3,
+      "expected": 1,
+      "text": "The jazz percussion was the one thing I wanted more of."
+    },
+    {
+      "id": "h24",
+      "group": "implicit",
+      "feature": "visual:symmetrical framing",
+      "rating": 9,
+      "expected": -1,
+      "text": "The centered framing felt suffocating rather than inviting."
+    },
+    {
+      "id": "h25",
+      "group": "implicit",
+      "feature": "composer:hans zimmer",
+      "rating": 8,
+      "expected": -1,
+      "text": "I kept wishing Hans Zimmer's music would stop."
+    },
+    {
+      "id": "h26",
+      "group": "sarcasm",
+      "feature": "composer:hans zimmer",
+      "rating": 8,
+      "expected": -1,
+      "text": "Amazing Hans Zimmer score. Apparently my ears needed another punishment."
+    },
+    {
+      "id": "h27",
+      "group": "sarcasm",
+      "feature": "visual:pastel palette",
+      "rating": 7,
+      "expected": -1,
+      "text": "Love the pastel colors. Nothing says depth like another candy shop."
+    },
+    {
+      "id": "h28",
+      "group": "sarcasm",
+      "feature": "music:jazz percussion",
+      "rating": 8,
+      "expected": -1,
+      "text": "Great jazz drums, if the goal was to give me a headache."
+    },
+    {
+      "id": "h29",
+      "group": "sarcasm",
+      "feature": "visual:symmetrical framing",
+      "rating": 7,
+      "expected": -1,
+      "text": "Oh great, more centered framing. Give it a rest."
+    },
+    {
+      "id": "h30",
+      "group": "sarcasm",
+      "feature": "composer:hans zimmer",
+      "rating": 9,
+      "expected": -1,
+      "text": "Hans Zimmer was wonderful, said nobody who watched with me."
+    },
+    {
+      "id": "h31",
+      "group": "neutral",
+      "feature": "composer:hans zimmer",
+      "rating": 8,
+      "expected": 0,
+      "text": "Hans Zimmer appears in the music credits near the end."
+    },
+    {
+      "id": "h32",
+      "group": "neutral",
+      "feature": "visual:pastel palette",
+      "rating": 7,
+      "expected": 0,
+      "text": "The room uses pastel colors with two windows facing the street."
+    },
+    {
+      "id": "h33",
+      "group": "neutral",
+      "feature": "music:jazz percussion",
+      "rating": 8,
+      "expected": 0,
+      "text": "I have no opinion about the jazz percussion yet."
+    },
+    {
+      "id": "h34",
+      "group": "neutral",
+      "feature": "visual:symmetrical framing",
+      "rating": 8,
+      "expected": 0,
+      "text": "The commentary explains the centered framing. The cast was excellent."
+    },
+    {
+      "id": "h35",
+      "group": "neutral",
+      "feature": "composer:hans zimmer",
+      "rating": 8,
+      "expected": 0,
+      "text": "Hans Zimmer wrote music for the film, which I enjoyed for its acting."
+    },
+    {
+      "id": "h36",
+      "group": "reference",
+      "feature": "visual:pastel palette",
+      "rating": 9,
+      "expected": 1,
+      "text": "I enjoyed the Wes Andersson aesthetic in the interiors."
+    },
+    {
+      "id": "h37",
+      "group": "reference",
+      "feature": "music:jazz percussion",
+      "rating": 3,
+      "expected": 1,
+      "text": "I liked the Birdman soundtrack more than the movie itself."
+    },
+    {
+      "id": "h38",
+      "group": "reference",
+      "feature": "composer:hans zimmer",
+      "rating": 8,
+      "expected": 1,
+      "text": "Hanz Zimmer was my favorite part of a messy film."
+    },
+    {
+      "id": "h39",
+      "group": "reference",
+      "feature": "music:jazz percussion",
+      "rating": 9,
+      "expected": 0,
+      "text": "Birdman was great because of the acting; I am not discussing its score."
+    },
+    {
+      "id": "h40",
+      "group": "reference",
+      "feature": "visual:pastel palette",
+      "rating": 7,
+      "expected": 0,
+      "text": "Wes Anderson is mentioned in the credits discussion. The acting was amazing."
+    }
+  ]
+}
