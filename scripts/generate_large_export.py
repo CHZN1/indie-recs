@@ -4,6 +4,8 @@
 from __future__ import annotations
 
 import csv
+import json
+import json
 import random
 from pathlib import Path
 
@@ -367,6 +369,10 @@ def clamp_rating(value: float) -> int:
 
 def build_rows(seed: int = 42) -> list[dict[str, str]]:
     rng = random.Random(seed)
+    repairs=json.loads((Path(__file__).resolve().parent.parent/'research'/'catalog_identity_repairs.json').read_text())['repairs']
+    confirmed_ids={(r['source_title'],r['source_year']):r['new_tmdb_id'] for r in repairs}
+    repairs=json.loads((Path(__file__).resolve().parent.parent/'research'/'catalog_identity_repairs.json').read_text())['repairs']
+    confirmed_ids={(r['source_title'],r['source_year']):r['new_tmdb_id'] for r in repairs}
     indie = _dedupe(INDIE)
     mainstream = _dedupe(MAINSTREAM)
     catalog = indie + mainstream
@@ -432,6 +438,8 @@ def build_rows(seed: int = 42) -> list[dict[str, str]]:
                     "Rating10": rating_field,
                     "Watched Date": f"2024-{rng.randint(1,12):02d}-{rng.randint(1,28):02d}",
                     "Rating5": "",
+                    "TMDB ID": confirmed_ids.get((title,year),""),
+                    "TMDB ID": confirmed_ids.get((title,year),""),
                 }
             )
     rng.shuffle(rows)
@@ -444,7 +452,7 @@ def main() -> None:
     with OUT.open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(
             handle,
-            fieldnames=["Username", "Movie Name", "Year", "Rating10", "Watched Date", "Rating5"],
+            fieldnames=["Username", "Movie Name", "Year", "Rating10", "Watched Date", "Rating5", "TMDB ID"],
         )
         writer.writeheader()
         writer.writerows(rows)

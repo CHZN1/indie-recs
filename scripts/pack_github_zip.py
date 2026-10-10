@@ -12,7 +12,7 @@ OUT = OUT_DIR / "indie-recs-github.zip"
 
 SKIP_DIR_NAMES = {".git", ".venv", "venv", "__pycache__", ".pytest_cache", ".mypy_cache", "dist"}
 SKIP_FILE_NAMES = {".env", ".DS_Store"}
-SKIP_SUFFIXES = {".pyc", ".pyo", ".db", ".db-journal", ".joblib", ".zip", ".log"}
+SKIP_SUFFIXES = {".pyc", ".pyo", ".db", ".db-journal", ".joblib", ".zip", ".log", ".lock", ".tmp"}
 
 
 def should_skip(path: Path) -> bool:
