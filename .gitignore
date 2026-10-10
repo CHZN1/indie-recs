@@ -13,3 +13,6 @@ models/*.joblib
 *.log
 dist/
 *.zip
+
+*.lock
+models/*.tmp
