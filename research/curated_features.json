@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "annotation_note": "Small, manually curated research feature map. These are interpretable editorial annotations, not objective labels or a complete catalog.",
+  "movies": {
+    "120467": {
+      "title": "The Grand Budapest Hotel",
+      "features": [
+        "visual:symmetrical framing",
+        "visual:pastel palette",
+        "visual:whimsical production design"
+      ],
+      "sources": [
+        "https://www.studiobinder.com/blog/wes-anderson-symmetry/",
+        "https://time.com/35859/grand-budapest-hotel-behind-the-scenes-wes-anderson/"
+      ]
+    },
+    "83666": {
+      "title": "Moonrise Kingdom",
+      "features": [
+        "visual:symmetrical framing"
+      ],
+      "sources": [
+        "https://www.studiobinder.com/blog/wes-anderson-symmetry/"
+      ]
+    },
+    "346648": {
+      "title": "Paddington 2",
+      "features": [
+        "visual:pastel palette",
+        "visual:whimsical production design",
+        "director:paul king"
+      ],
+      "sources": [
+        "https://www.bfi.org.uk/sight-and-sound/reviews/paddington-2-review-brexit-pursued-bear"
+      ]
+    },
+    "194662": {
+      "title": "Birdman",
+      "features": [
+        "music:jazz percussion",
+        "composer:antonio sanchez"
+      ],
+      "sources": [
+        "https://www.antoniosanchez.net/birdman-films"
+      ]
+    },
+    "244786": {
+      "title": "Whiplash",
+      "features": [
+        "music:jazz percussion"
+      ],
+      "sources": [
+        "https://www.sonyclassics.com/film//whiplash"
+      ]
+    }
+  },
+  "reference_styles": {
+    "wes anderson": [
+      "visual:symmetrical framing",
+      "visual:pastel palette",
+      "visual:whimsical production design"
+    ],
+    "birdman": [
+      "music:jazz percussion",
+      "composer:antonio sanchez"
+    ]
+  }
+}

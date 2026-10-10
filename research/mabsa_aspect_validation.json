@@ -1,0 +1,905 @@
+{
+  "source": "https://data.mendeley.com/datasets/f3ftpd7xpg/4",
+  "source_sha256": "a4e273a576d8de7cf0efda9f2964e9d6974ea6541b27b5bd9ac02a531ea488e4",
+  "seed": 42,
+  "rows": 4000,
+  "duplicate_groups": 3830,
+  "split_rows": {
+    "train": 2394,
+    "validation": 799,
+    "test": 807
+  },
+  "aspects": {
+    "Direction": {
+      "selected_c": 1,
+      "validation_macro_f1": 0.6678014525854763,
+      "test": {
+        "n": 807,
+        "accuracy": 0.79182156133829,
+        "macro_f1": 0.5941979825632862,
+        "presence_f1": 0.7087576374745418,
+        "mentioned_count": 241,
+        "mentioned_exact_polarity_accuracy": 0.6182572614107884,
+        "negative_recall": 0.6822429906542056,
+        "class_counts": {
+          "absent": 566,
+          "negative": 107,
+          "neutral": 14,
+          "positive": 120
+        },
+        "confusion_matrix_labels": [
+          "absent",
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "confusion_matrix": [
+          [
+            490,
+            31,
+            5,
+            40
+          ],
+          [
+            25,
+            73,
+            0,
+            9
+          ],
+          [
+            5,
+            2,
+            3,
+            4
+          ],
+          [
+            37,
+            8,
+            2,
+            73
+          ]
+        ]
+      },
+      "majority_baseline": {
+        "n": 807,
+        "accuracy": 0.701363073110285,
+        "macro_f1": 0.20611798980335033,
+        "presence_f1": 0.0,
+        "mentioned_count": 241,
+        "mentioned_exact_polarity_accuracy": 0.0,
+        "negative_recall": 0.0,
+        "class_counts": {
+          "absent": 566,
+          "negative": 107,
+          "neutral": 14,
+          "positive": 120
+        },
+        "confusion_matrix_labels": [
+          "absent",
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "confusion_matrix": [
+          [
+            566,
+            0,
+            0,
+            0
+          ],
+          [
+            107,
+            0,
+            0,
+            0
+          ],
+          [
+            14,
+            0,
+            0,
+            0
+          ],
+          [
+            120,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    "Acting": {
+      "selected_c": 10,
+      "validation_macro_f1": 0.6986490693682474,
+      "test": {
+        "n": 807,
+        "accuracy": 0.8376703841387856,
+        "macro_f1": 0.6410145610727006,
+        "presence_f1": 0.8015873015873016,
+        "mentioned_count": 260,
+        "mentioned_exact_polarity_accuracy": 0.6576923076923077,
+        "negative_recall": 0.7297297297297297,
+        "class_counts": {
+          "absent": 547,
+          "negative": 111,
+          "neutral": 20,
+          "positive": 129
+        },
+        "confusion_matrix_labels": [
+          "absent",
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "confusion_matrix": [
+          [
+            505,
+            14,
+            0,
+            28
+          ],
+          [
+            21,
+            81,
+            0,
+            9
+          ],
+          [
+            5,
+            7,
+            3,
+            5
+          ],
+          [
+            32,
+            9,
+            1,
+            87
+          ]
+        ]
+      },
+      "majority_baseline": {
+        "n": 807,
+        "accuracy": 0.677819083023544,
+        "macro_f1": 0.20199409158050222,
+        "presence_f1": 0.0,
+        "mentioned_count": 260,
+        "mentioned_exact_polarity_accuracy": 0.0,
+        "negative_recall": 0.0,
+        "class_counts": {
+          "absent": 547,
+          "negative": 111,
+          "neutral": 20,
+          "positive": 129
+        },
+        "confusion_matrix_labels": [
+          "absent",
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "confusion_matrix": [
+          [
+            547,
+            0,
+            0,
+            0
+          ],
+          [
+            111,
+            0,
+            0,
+            0
+          ],
+          [
+            20,
+            0,
+            0,
+            0
+          ],
+          [
+            129,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    "Songs": {
+      "selected_c": 10,
+      "validation_macro_f1": 0.6308639017053268,
+      "test": {
+        "n": 807,
+        "accuracy": 0.9380421313506815,
+        "macro_f1": 0.6578686915939701,
+        "presence_f1": 0.8484848484848485,
+        "mentioned_count": 126,
+        "mentioned_exact_polarity_accuracy": 0.6587301587301587,
+        "negative_recall": 0.7346938775510204,
+        "class_counts": {
+          "absent": 681,
+          "negative": 49,
+          "neutral": 13,
+          "positive": 64
+        },
+        "confusion_matrix_labels": [
+          "absent",
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "confusion_matrix": [
+          [
+            674,
+            3,
+            0,
+            4
+          ],
+          [
+            6,
+            36,
+            0,
+            7
+          ],
+          [
+            7,
+            3,
+            1,
+            2
+          ],
+          [
+            15,
+            3,
+            0,
+            46
+          ]
+        ]
+      },
+      "majority_baseline": {
+        "n": 807,
+        "accuracy": 0.8438661710037175,
+        "macro_f1": 0.2288306451612903,
+        "presence_f1": 0.0,
+        "mentioned_count": 126,
+        "mentioned_exact_polarity_accuracy": 0.0,
+        "negative_recall": 0.0,
+        "class_counts": {
+          "absent": 681,
+          "negative": 49,
+          "neutral": 13,
+          "positive": 64
+        },
+        "confusion_matrix_labels": [
+          "absent",
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "confusion_matrix": [
+          [
+            681,
+            0,
+            0,
+            0
+          ],
+          [
+            49,
+            0,
+            0,
+            0
+          ],
+          [
+            13,
+            0,
+            0,
+            0
+          ],
+          [
+            64,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    "Screenplay": {
+      "selected_c": 0.1,
+      "validation_macro_f1": 0.6355004135649297,
+      "test": {
+        "n": 807,
+        "accuracy": 0.8314745972738538,
+        "macro_f1": 0.5790945495143165,
+        "presence_f1": 0.711484593837535,
+        "mentioned_count": 164,
+        "mentioned_exact_polarity_accuracy": 0.573170731707317,
+        "negative_recall": 0.4852941176470588,
+        "class_counts": {
+          "absent": 643,
+          "negative": 68,
+          "neutral": 18,
+          "positive": 78
+        },
+        "confusion_matrix_labels": [
+          "absent",
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "confusion_matrix": [
+          [
+            577,
+            15,
+            15,
+            36
+          ],
+          [
+            20,
+            33,
+            9,
+            6
+          ],
+          [
+            3,
+            2,
+            7,
+            6
+          ],
+          [
+            14,
+            8,
+            2,
+            54
+          ]
+        ]
+      },
+      "majority_baseline": {
+        "n": 807,
+        "accuracy": 0.7967781908302355,
+        "macro_f1": 0.2217241379310345,
+        "presence_f1": 0.0,
+        "mentioned_count": 164,
+        "mentioned_exact_polarity_accuracy": 0.0,
+        "negative_recall": 0.0,
+        "class_counts": {
+          "absent": 643,
+          "negative": 68,
+          "neutral": 18,
+          "positive": 78
+        },
+        "confusion_matrix_labels": [
+          "absent",
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "confusion_matrix": [
+          [
+            643,
+            0,
+            0,
+            0
+          ],
+          [
+            68,
+            0,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0,
+            0
+          ],
+          [
+            78,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    "Story": {
+      "selected_c": 1,
+      "validation_macro_f1": 0.622920267560569,
+      "test": {
+        "n": 807,
+        "accuracy": 0.8550185873605948,
+        "macro_f1": 0.6253960761292924,
+        "presence_f1": 0.7009646302250804,
+        "mentioned_count": 157,
+        "mentioned_exact_polarity_accuracy": 0.5414012738853503,
+        "negative_recall": 0.576271186440678,
+        "class_counts": {
+          "absent": 650,
+          "negative": 59,
+          "neutral": 20,
+          "positive": 78
+        },
+        "confusion_matrix_labels": [
+          "absent",
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "confusion_matrix": [
+          [
+            605,
+            22,
+            2,
+            21
+          ],
+          [
+            15,
+            34,
+            4,
+            6
+          ],
+          [
+            5,
+            2,
+            9,
+            4
+          ],
+          [
+            28,
+            3,
+            5,
+            42
+          ]
+        ]
+      },
+      "majority_baseline": {
+        "n": 807,
+        "accuracy": 0.80545229244114,
+        "macro_f1": 0.2230610844200412,
+        "presence_f1": 0.0,
+        "mentioned_count": 157,
+        "mentioned_exact_polarity_accuracy": 0.0,
+        "negative_recall": 0.0,
+        "class_counts": {
+          "absent": 650,
+          "negative": 59,
+          "neutral": 20,
+          "positive": 78
+        },
+        "confusion_matrix_labels": [
+          "absent",
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "confusion_matrix": [
+          [
+            650,
+            0,
+            0,
+            0
+          ],
+          [
+            59,
+            0,
+            0,
+            0
+          ],
+          [
+            20,
+            0,
+            0,
+            0
+          ],
+          [
+            78,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    "Camera": {
+      "selected_c": 10,
+      "validation_macro_f1": 0.7105866386562434,
+      "test": {
+        "n": 807,
+        "accuracy": 0.9157372986369269,
+        "macro_f1": 0.7583987020189358,
+        "presence_f1": 0.8377581120943953,
+        "mentioned_count": 176,
+        "mentioned_exact_polarity_accuracy": 0.7329545454545454,
+        "negative_recall": 0.890625,
+        "class_counts": {
+          "absent": 631,
+          "negative": 64,
+          "neutral": 15,
+          "positive": 97
+        },
+        "confusion_matrix_labels": [
+          "absent",
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "confusion_matrix": [
+          [
+            610,
+            4,
+            3,
+            14
+          ],
+          [
+            5,
+            57,
+            0,
+            2
+          ],
+          [
+            3,
+            5,
+            7,
+            0
+          ],
+          [
+            26,
+            2,
+            4,
+            65
+          ]
+        ]
+      },
+      "majority_baseline": {
+        "n": 807,
+        "accuracy": 0.781908302354399,
+        "macro_f1": 0.2194019471488178,
+        "presence_f1": 0.0,
+        "mentioned_count": 176,
+        "mentioned_exact_polarity_accuracy": 0.0,
+        "negative_recall": 0.0,
+        "class_counts": {
+          "absent": 631,
+          "negative": 64,
+          "neutral": 15,
+          "positive": 97
+        },
+        "confusion_matrix_labels": [
+          "absent",
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "confusion_matrix": [
+          [
+            631,
+            0,
+            0,
+            0
+          ],
+          [
+            64,
+            0,
+            0,
+            0
+          ],
+          [
+            15,
+            0,
+            0,
+            0
+          ],
+          [
+            97,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    "Casting": {
+      "selected_c": 1,
+      "validation_macro_f1": 0.7042909425306069,
+      "test": {
+        "n": 807,
+        "accuracy": 0.8785625774473358,
+        "macro_f1": 0.6465020791633694,
+        "presence_f1": 0.7700534759358288,
+        "mentioned_count": 194,
+        "mentioned_exact_polarity_accuracy": 0.6804123711340206,
+        "negative_recall": 0.696078431372549,
+        "class_counts": {
+          "absent": 613,
+          "negative": 102,
+          "neutral": 8,
+          "positive": 84
+        },
+        "confusion_matrix_labels": [
+          "absent",
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "confusion_matrix": [
+          [
+            577,
+            12,
+            0,
+            24
+          ],
+          [
+            26,
+            71,
+            0,
+            5
+          ],
+          [
+            2,
+            2,
+            1,
+            3
+          ],
+          [
+            22,
+            2,
+            0,
+            60
+          ]
+        ]
+      },
+      "majority_baseline": {
+        "n": 807,
+        "accuracy": 0.7596034696406444,
+        "macro_f1": 0.2158450704225352,
+        "presence_f1": 0.0,
+        "mentioned_count": 194,
+        "mentioned_exact_polarity_accuracy": 0.0,
+        "negative_recall": 0.0,
+        "class_counts": {
+          "absent": 613,
+          "negative": 102,
+          "neutral": 8,
+          "positive": 84
+        },
+        "confusion_matrix_labels": [
+          "absent",
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "confusion_matrix": [
+          [
+            613,
+            0,
+            0,
+            0
+          ],
+          [
+            102,
+            0,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            84,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    "BGM": {
+      "selected_c": 10,
+      "validation_macro_f1": 0.7628365701398754,
+      "test": {
+        "n": 807,
+        "accuracy": 0.9467162329615861,
+        "macro_f1": 0.7722061888728555,
+        "presence_f1": 0.7692307692307693,
+        "mentioned_count": 92,
+        "mentioned_exact_polarity_accuracy": 0.5760869565217391,
+        "negative_recall": 0.4864864864864865,
+        "class_counts": {
+          "absent": 715,
+          "negative": 37,
+          "neutral": 15,
+          "positive": 40
+        },
+        "confusion_matrix_labels": [
+          "absent",
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "confusion_matrix": [
+          [
+            711,
+            3,
+            0,
+            1
+          ],
+          [
+            17,
+            18,
+            1,
+            1
+          ],
+          [
+            2,
+            2,
+            11,
+            0
+          ],
+          [
+            13,
+            3,
+            0,
+            24
+          ]
+        ]
+      },
+      "majority_baseline": {
+        "n": 807,
+        "accuracy": 0.885997521685254,
+        "macro_f1": 0.23488830486202367,
+        "presence_f1": 0.0,
+        "mentioned_count": 92,
+        "mentioned_exact_polarity_accuracy": 0.0,
+        "negative_recall": 0.0,
+        "class_counts": {
+          "absent": 715,
+          "negative": 37,
+          "neutral": 15,
+          "positive": 40
+        },
+        "confusion_matrix_labels": [
+          "absent",
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "confusion_matrix": [
+          [
+            715,
+            0,
+            0,
+            0
+          ],
+          [
+            37,
+            0,
+            0,
+            0
+          ],
+          [
+            15,
+            0,
+            0,
+            0
+          ],
+          [
+            40,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    "Editing": {
+      "selected_c": 1,
+      "validation_macro_f1": 0.6813368215666489,
+      "test": {
+        "n": 807,
+        "accuracy": 0.9318463444857497,
+        "macro_f1": 0.6330093755231877,
+        "presence_f1": 0.7349397590361446,
+        "mentioned_count": 93,
+        "mentioned_exact_polarity_accuracy": 0.5376344086021505,
+        "negative_recall": 0.5428571428571428,
+        "class_counts": {
+          "absent": 714,
+          "negative": 35,
+          "neutral": 14,
+          "positive": 44
+        },
+        "confusion_matrix_labels": [
+          "absent",
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "confusion_matrix": [
+          [
+            702,
+            5,
+            5,
+            2
+          ],
+          [
+            13,
+            19,
+            2,
+            1
+          ],
+          [
+            5,
+            6,
+            3,
+            0
+          ],
+          [
+            14,
+            1,
+            1,
+            28
+          ]
+        ]
+      },
+      "majority_baseline": {
+        "n": 807,
+        "accuracy": 0.8847583643122676,
+        "macro_f1": 0.23471400394477318,
+        "presence_f1": 0.0,
+        "mentioned_count": 93,
+        "mentioned_exact_polarity_accuracy": 0.0,
+        "negative_recall": 0.0,
+        "class_counts": {
+          "absent": 714,
+          "negative": 35,
+          "neutral": 14,
+          "positive": 44
+        },
+        "confusion_matrix_labels": [
+          "absent",
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "confusion_matrix": [
+          [
+            714,
+            0,
+            0,
+            0
+          ],
+          [
+            35,
+            0,
+            0,
+            0
+          ],
+          [
+            14,
+            0,
+            0,
+            0
+          ],
+          [
+            44,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    }
+  },
+  "limits": [
+    "Labels are human annotations of Malayalam originals; inputs are supplied approximate English translations.",
+    "Review duplicates in either language are grouped; reviewer and movie IDs are unavailable, so those overlaps cannot be excluded.",
+    "Absent is distinct from a labeled neutral opinion.",
+    "Only C selected on validation; held-out test used once for this report.",
+    "These broad aspects do not label named composers, Wes Anderson style, lighting preferences, or musical similarity.",
+    "This classifier does not modify the frozen language extractor or live recommendation model."
+  ],
+  "status": "Offline research; not a deployed model"
+}

@@ -1,0 +1,21 @@
+{
+  "source": "https://www.kaggle.com/datasets/rmisra/imdb-spoiler-dataset",
+  "archive_sha256": "1ed1f31b76ead0b004289b72522da2590048602be824ade1d83725eb4f81f7a1",
+  "join": "Exact cached TMDB details imdb_id plus release year within one year; no title fuzzy match",
+  "counts": {
+    "year_conflicts": 1,
+    "source_reviews": 573913,
+    "matched_before_validation": 100549,
+    "accepted_reviews": 100549
+  },
+  "users": 67124,
+  "reviewed_movies": 152,
+  "matched_catalog_movies": 152,
+  "indie_candidates": 14,
+  "expanded_candidates": 21,
+  "limits": [
+    "Only overlap with current local catalog; not representative of all indie films.",
+    "Local cached IMDb links are metadata, not independent manual identity certification.",
+    "Data kept for research outside public repository; commercial rights not established."
+  ]
+}
