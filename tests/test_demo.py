@@ -18,3 +18,7 @@ def test_openapi_keeps_demo_routes_out_of_integration_contract():
     assert "/upload" in paths
     assert "/recommend/{user_id}" in paths
     assert "/demo" not in paths
+
+
+def test_recommend_rejects_unknown_scope():
+    assert TestClient(app).get('/recommend/viewer?scope=unsupported').status_code == 422
